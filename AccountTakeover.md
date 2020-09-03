@@ -92,3 +92,16 @@ POST /newaccount
 [...]
 {“email”:“victim@mail.com”,”hacker@mail.com”,“token”:”xxxxxxxxxx”}
 ```
+
+10. Find out how the tokens generate
+- Generated based on TimeStamp
+- Generated based on the ID of the user
+- Generated based on the email of the user
+- Generated based on the name of the user
+> [For Example](https://medium.com/bugbountywriteup/how-i-discovered-an-interesting-account-takeover-flaw-18a7fb1e5359)
+
+11. Account takeover after login (Work if inside the website there is "Connect to facebook/twitter/etc")
+  - First, login to the website using victim email
+  - Find "Connect to facebook/twitter/googleplus" or something like that ![Photo](https://miro.medium.com/max/875/0*LOrCFhQF9-KPALPg.png)]
+  - Connect to attacker twitter
+  - After logout you can login using the twitter
