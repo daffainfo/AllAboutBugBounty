@@ -100,4 +100,13 @@ GET /graphql.php?query=
 [...]
 ```
 
+10. MFLAC (Missing Function Level Access Control)
+```
+GET /admin/profile
+```
+Try this to bypass
+```
+GET /ADMIN/profile
+```
+
 Source: [@swaysThinking](https://twitter.com/swaysThinking) and other medium writeup!
