@@ -40,3 +40,5 @@ Try this to bypass
 ```
 http://target.com/admin..;/
 ```
+
+Source: [https://twitter.com/iam_j0ker]()
