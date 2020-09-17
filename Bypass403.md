@@ -41,4 +41,14 @@ Try this to bypass
 http://target.com/admin..;/
 ```
 
-Source: [https://twitter.com/iam_j0ker]()
+
+5. Try to uppercase the alphabet in the url
+```
+http://target.com/admin
+```
+Try this to bypass
+```
+http://target.com/aDmIN
+```
+
+Source: [@iam_j0ker](https://twitter.com/iam_j0ker)
