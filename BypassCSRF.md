@@ -48,7 +48,7 @@ Host: target.com
 [...]
 
 username=dapos&password=123456&token=aaabaa
-
+```
 4. Changing POST / GET method
 ```
 POST /register HTTP/1.1
