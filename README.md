@@ -1,13 +1,16 @@
 # All about bug bounty
+These are my bug bounty notes that I have gathered from various sources, you can contribute to this repository too!
 
 ## List
 - [Account Takeover](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Account%20Takeover.md)
+- [Business Logic Errors](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Business%20Logic%20Errors.md)
 - [Cross Site Scripting (XSS)](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Cross%20Site%20Scripting.md)
 - [Denial of Service (DoS)](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Denial%20Of%20Service.md)
 - [Exposed Source Code](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Denial%20Of%20Service.md)
 - [Host Header Injection](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Host%20Header%20Injection.md)
 - [Insecure Direct Object References (IDOR)](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Insecure%20Direct%20Object%20References.md)
 - [Password Reset Flaws](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Password%20Reset%20Flaws.md)
+- [Web Cache Poisoning](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Web%20Cache%20Poisoning.md)
 
 ## List Bypass
 - [Bypass 2FA](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%202FA.md)
