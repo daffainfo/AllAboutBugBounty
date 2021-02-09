@@ -3,6 +3,7 @@ These are my bug bounty notes that I have gathered from various sources, you can
 
 ## List
 - [Business Logic Errors](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Business%20Logic%20Errors.md)
+- [Cross Site Request Forgery (CSRF)](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Cross%20Site%20Request%20Forgery.md)
 - [Cross Site Scripting (XSS)](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Cross%20Site%20Scripting.md)
 - [Denial of Service (DoS)](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Denial%20Of%20Service.md)
 - [Exposed Source Code](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Denial%20Of%20Service.md)
@@ -13,7 +14,6 @@ These are my bug bounty notes that I have gathered from various sources, you can
 ## List Bypass
 - [Bypass 2FA](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%202FA.md)
 - [Bypass 403](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%20403.md)
-- [Bypass CSRF](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%20CSRF.md)
 - [Bypass Captcha](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%20Captcha.md)
 - [Bypass File Upload](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%20File%20Upload.md)
 - [Bypass Rate Limit](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%20Rate%20Limit.md)
@@ -27,7 +27,12 @@ These are my bug bounty notes that I have gathered from various sources, you can
 
 ## Miscellaneous
 - [Account Takeover](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Misc/Account%20Takeover.md)
+- [Broken Link Hijacking](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Misc/Broken%20Link%20Hijacking.md)
+- [Email Spoofing](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Misc/Email%20Spoofing.md)
+- [JWT Vulnerabilities](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Misc/JWT%20Vulnerabilities.md)
+- [Mass Assignment](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Misc/Mass%20Assignment.md)
 - [Password Reset Flaws](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Misc/Password%20Reset%20Flaws.md)
+- [Tabnabbing](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Misc/Tabnabbing.md)
 - [Unauthenticated Jira CVE](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Misc/Unauthenticated%20Jira%20CVE.md)
 
 ## Reconnaissance
