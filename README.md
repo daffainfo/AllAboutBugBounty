@@ -2,14 +2,12 @@
 These are my bug bounty notes that I have gathered from various sources, you can contribute to this repository too!
 
 ## List
-- [Account Takeover](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Account%20Takeover.md)
 - [Business Logic Errors](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Business%20Logic%20Errors.md)
 - [Cross Site Scripting (XSS)](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Cross%20Site%20Scripting.md)
 - [Denial of Service (DoS)](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Denial%20Of%20Service.md)
 - [Exposed Source Code](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Denial%20Of%20Service.md)
 - [Host Header Injection](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Host%20Header%20Injection.md)
 - [Insecure Direct Object References (IDOR)](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Insecure%20Direct%20Object%20References.md)
-- [Password Reset Flaws](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Password%20Reset%20Flaws.md)
 - [Web Cache Poisoning](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Web%20Cache%20Poisoning.md)
 
 ## List Bypass
@@ -28,72 +26,14 @@ These are my bug bounty notes that I have gathered from various sources, you can
 - [Zend](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Framework/Zend.MD)
 
 ## Miscellaneous
-- [Jira](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Misc/Unauthenticated%20Jira%20CVE.md)
+- [Account Takeover](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Misc/Account%20Takeover.md)
+- [Password Reset Flaws](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Misc/Password%20Reset%20Flaws.md)
+- [Unauthenticated Jira CVE](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Misc/Unauthenticated%20Jira%20CVE.md)
 
 ## Reconnaissance
-* ### __Small Scope__
-Only Specific URLs are part of Scope. This usually includes staging/dev/testing or single URLs.
-- [x] Directory Enumeration
-- [x] Technology Fingerprinting
-- [x] Port Scanning
-- [x] Parameter Fuzzing
-- [x] Wayback History
-- [x] Known Vulnerabilities
-- [x] Hardcoded Information in JavaScript
-- [x] Domain Specific GitHub & Google Dorking
-- [x] Broken Link Hijacking
-- [x] Data Breach Analysis
-- [x] Misconfigured Cloud Storage
-* ### __Medium Scope__
-Usually the scope is wild card scope where all the subdomains are part of scope
-- [x] Subdomain Enumeration
-- [x] Subdomain Takeover
-- [x] Probing & Technology Fingerprinting
-- [x] Port Scanning
-- [x] Known Vulnerabilities
-- [x] Template Based Scanning (Nuclei/Jeales)
-- [x] Misconfigured Cloud Storage
-- [x] Broken Link Hijacking
-- [x] Directory Enumeration
-- [x] Hardcoded Information in JavaScript
-- [x] GitHub Reconnaissance
-- [x] Google Dorking
-- [x] Data Breach Analysis
-- [x] Parameter Fuzzing
-- [x] Internet Search Engine Discovery (Shodan, Censys, Spyse, etc.)
-- [x] IP Range Enumeration (If in Scope)
-- [x] Wayback History
-- [x] Potential Pattern Extraction with GF and automating further for XSS, SSRF, etc.
-- [x] Heartbleed Scanning
-- [x] General Security Misconfiguration Scanning
-* ### __Large Scope__
-Everything related to the Organization is a part of Scope. This includes child companies, subdomains or any labelled asset owned by organization.
-- [x] Tracking & Tracing every possible signatures of the Target Application (Often there might not be any history on Google related to a scope target, but you can still crawl it.) ​
-- [x] Subsidiary & Acquisition Enumeration (Depth – Max)​
-- [x] Reverse Lookup
-- [x] ASN & IP Space Enumeration and Service Identification​
-- [x] Subdomain Enumeration
-- [x] Subdomain Takeover
-- [x] Probing & Technology Fingerprinting
-- [x] Port Scanning
-- [x] Known Vulnerabilities
-- [x] Template Based Scanning (Nuclei/Jeales)
-- [x] Misconfigured Cloud Storage
-- [x] Broken Link Hijacking
-- [x] Directory Enumeration
-- [x] Hardcoded Information in JavaScript
-- [x] GitHub Reconnaissance
-- [x] Google Dorking
-- [x] Data Breach Analysis
-- [x] Parameter Fuzzing
-- [x] Internet Search Engine Discovery (Shodan, Censys, Spyse, etc.)
-- [x] IP Range Enumeration (If in Scope)
-- [x] Wayback History
-- [x] Potential Pattern Extraction with GF and automating further for XSS, SSRF, etc.
-- [x] Heartbleed Scanning
-- [x] General Security Misconfiguration Scanning
-- [x] And any possible Recon Vector (Network/Web) can be applied.​
-
-Source: [Link](https://www.xmind.net/m/hKKexj/)
+- [Scope Based Recon](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Recon/Scope.md)
+- [Github Dorks](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Recon/Github%20Dorks.md)
+- [Google Dorks](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Recon/Google%20Dorks.md)
+- [Shodan Dorks](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Recon/Shodan%20Dorks.md)
 
 ## Coming Soon!

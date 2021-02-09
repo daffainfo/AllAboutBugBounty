@@ -1,4 +1,8 @@
 # Web Cache Poisoning
+## **Introduction**
+The objective of web cache poisoning is to send a request that causes a harmful response that gets saved in the cache and served to other users.
+
+## **How to Find**
 1. Basic poisoning
 ```
 GET / HTTP/1.1
@@ -145,3 +149,6 @@ The response is
 HTTP/1.1 302 Found
 Location: http://noshandnibble.blog/
 ```
+
+Reference:
+- [Portswigger](https://portswigger.net/research/practical-web-cache-poisoning)

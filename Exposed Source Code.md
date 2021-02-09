@@ -1,5 +1,9 @@
 # Exposed Source Code
 
+## **Introduction**
+Source code intended to be kept server-side can sometimes end up being disclosed to users. Such code may contain sensitive information such as database passwords and secret keys, which may help malicious users formulate attacks against the application.
+## **How to Find**
+
 1. Exposed Git folder
 ```
 https://site.com/.git
@@ -23,3 +27,6 @@ https://site.com/.hg
 http://target.com/.bzr
 ```
 ![BZR folder](https://1.bp.blogspot.com/-67WO_kL_iB8/XliKl1jggAI/AAAAAAAAATc/mWBw7igq05EdKR3JZmbXYN4LqjpBOrESgCLcBGAsYHQ/s1600/1.png)
+
+Reference:
+- [NakanoSec (my own post)](https://www.nakanosec.com/2020/02/exposed-source-code-pada-website.html)
