@@ -105,5 +105,14 @@ Try this to bypass
 GET /ADMIN/profile
 ```
 
+11. Try to swap uuid with number
+```
+GET /file?id=90ri2-xozifke-29ikedaw0d
+```
+Try this to bypass
+```
+GET /file?id=302
+```
+
 Reference: 
 - [@swaysThinking](https://twitter.com/swaysThinking) and other medium writeup
