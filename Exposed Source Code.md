@@ -28,5 +28,15 @@ http://target.com/.bzr
 ```
 ![BZR folder](https://1.bp.blogspot.com/-67WO_kL_iB8/XliKl1jggAI/AAAAAAAAATc/mWBw7igq05EdKR3JZmbXYN4LqjpBOrESgCLcBGAsYHQ/s1600/1.png)
 
+5. Exposed Darcs folder
+```
+http://target.com/_darcs
+```
+
+6. Exposed Bitkeeper folder
+```
+http://target.com/Bitkeeper
+```
+
 Reference:
 - [NakanoSec (my own post)](https://www.nakanosec.com/2020/02/exposed-source-code-pada-website.html)
