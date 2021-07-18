@@ -11,7 +11,7 @@ These are my bug bounty notes that I have gathered from various sources, you can
 - [Open Redirect](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Open%20Redirect.md)
 - [Insecure Direct Object References (IDOR)](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Insecure%20Direct%20Object%20References.md)
 - [Denial of Service (DoS)](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Denial%20Of%20Service.md)
-- [Exposed Source Code](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Denial%20Of%20Service.md)
+- [Exposed Source Code](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Exposed%20Source%20Code.md)
 - [Host Header Injection](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Host%20Header%20Injection.md)
 - [Web Cache Poisoning](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Web%20Cache%20Poisoning.md)
 
