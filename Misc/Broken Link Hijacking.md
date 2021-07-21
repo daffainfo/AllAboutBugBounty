@@ -1,14 +1,14 @@
 # Broken Link Hijacking
-## **Introduction**
-Broken Link Hijacking (BLH) exists whenever a target links to an expired domain or page
 
-## **How to Find**
+## Tools
+- [broken-link-checker](https://github.com/stevenvachon/broken-link-checker)
+  
+## Definition
+Broken Link Hijacking exists whenever a target links to an expired domain or page
+
+## How to find
 1. Manually find external links on the target site (For example, check some links to social media accounts)
-2. Try [broken-link-checker](https://github.com/stevenvachon/broken-link-checker) tools to find broken link, this is the command
-
-```
-blc -rof --filter-level 3 https://vuln.com/
-```
+2. Try using tools to find broken link, for example using tools that listed in this readme
 
 References:
 - [Broken Link Hijacking - How expired links can be exploited.](https://edoverflow.com/2017/broken-link-hijacking/)

