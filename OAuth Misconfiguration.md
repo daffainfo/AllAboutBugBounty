@@ -11,3 +11,6 @@
 10. Only company's email is allowed? > Try to replace hd=company(.)com to hd=gmail(.)com
 11.  Check if its leaking client_secret parameter.
 12.  Go to the browser history and check if the token is there.
+
+Reference:
+- https://twitter.com/tuhin1729_/status/1417843523177484292
