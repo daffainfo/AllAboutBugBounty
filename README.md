@@ -39,6 +39,7 @@ These are my bug bounty notes that I have gathered from various sources, you can
 ## Miscellaneous
 - [Account Takeover](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Misc/Account%20Takeover.md)
 - [Broken Link Hijacking](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Misc/Broken%20Link%20Hijacking.md)
+- [Default Credentials](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Misc/Default%20Credentials.md)
 - [Email Spoofing](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Misc/Email%20Spoofing.md)
 - [JWT Vulnerabilities](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Misc/JWT%20Vulnerabilities.md)
 - [Mass Assignment](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Misc/Mass%20Assignment.md)
