@@ -25,8 +25,8 @@ These are my bug bounty notes that I have gathered from various sources, you can
 - [Bypass 2FA](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%202FA.md)
 - [Bypass 403](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%20403.md)
 - [Bypass 304](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%20304.md)
+- [Bypass 429](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%20429.md)
 - [Bypass Captcha](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%20Captcha.md)
-- [Bypass File Upload](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%20File%20Upload.md)
 - [Bypass Rate Limit](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%20Rate%20Limit.md)
 
 ## List CMS
@@ -47,9 +47,12 @@ These are my bug bounty notes that I have gathered from various sources, you can
 - [Tabnabbing](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Misc/Tabnabbing.md)
 
 ## Technologies
+- [Grafana](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Grafana.md)
+- [HAProxy](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/HAProxy.md)
 - [Jira](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Jira.md)
 - [Jenkins](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Jenkins.md)
 - [Moodle](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Moodle.md)
+- [Moodle](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Nginx.md)
 
 ## Reconnaissance
 - [Scope Based Recon](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Recon/Scope.md)

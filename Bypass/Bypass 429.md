@@ -1,4 +1,4 @@
-# Bypass Rate Limit
+# 429 Rate limit Bypass 
 1. Try add some custom header
 ```
 X-Forwarded-For : 127.0.0.1
