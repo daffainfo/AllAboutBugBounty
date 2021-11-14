@@ -27,7 +27,7 @@ These are my bug bounty notes that I have gathered from various sources, you can
 - [Bypass 304](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%20304.md)
 - [Bypass 429](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%20429.md)
 - [Bypass Captcha](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%20Captcha.md)
-- [Bypass Rate Limit](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%20Rate%20Limit.md)
+- [Bypass File Upload](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%20File%20Upload.md)
 
 ## List CMS
 - [WordPress](https://github.com/daffainfo/AllAboutBugBounty/blob/master/CMS/WordPress.md)
@@ -52,7 +52,7 @@ These are my bug bounty notes that I have gathered from various sources, you can
 - [Jira](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Jira.md)
 - [Jenkins](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Jenkins.md)
 - [Moodle](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Moodle.md)
-- [Moodle](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Nginx.md)
+- [Nginx](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Nginx.md)
 
 ## Reconnaissance
 - [Scope Based Recon](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Recon/Scope.md)
