@@ -1,27 +1,28 @@
 # Denial of Service
 
-## **Introduction**
+## Introduction
 Denial of Service is a type of attack on a service that disrupts its normal function and prevents other users from accessing it
-## **How to Find**
+## How to FInd
 
 1. Cookie bomb
    
-    ```
-    https://target.com/index.php?param1=xxxxxxxxxxxxxx
-    ```
+```
+https://target.com/index.php?param1=xxxxxxxxxxxxxx
+```
 After input "xxxxxxxxxxxxxx" as a value of param1, check your cookies. If there is cookies the value is "xxxxxxxxxxxxxxxxxxxxxx" it means the website is vulnerable
 
 2. Try input a very long payload to form. For example using very long password or using very long email
-    ```
-    POST /Register
-    [...]
+```
+POST /Register HTTP/1.1
+Host: target.com
+[...]
 
-    username=victim&password=aaaaaaaaaaaaaaa
-    ```
+username=victim&password=aaaaaaaaaaaaaaa
+```
 
 3. Pixel flood, using image with a huge pixels
 
-Download the payload: [Here](https://hackerone-us-west-2-production-attachments.s3.us-west-2.amazonaws.com/000/000/128/5f5a974e5f67ab7a11d2d92bd40f8997969f2f17/lottapixel.jpg?response-content-disposition=attachment%3B%20filename%3D%22lottapixel.jpg%22%3B%20filename%2A%3DUTF-8%27%27lottapixel.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAQGK6FURQYFO7EZHL%2F20200910%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200910T110133Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEFIaCXVzLXdlc3QtMiJGMEQCIGgY3dUtffr4V%2BoxTJaFxc%2F7qjRodT3XLyN1ZLEF8%2FhfAiAXklx1Zvy3iKIGm1bocpDUP1cTx46eTbsDOKqRC93fgyq0AwhbEAEaDDAxMzYxOTI3NDg0OSIMH9s8JiCh%2B%2FNADeibKpEDocuqfbmxkM5H5iKsA3K4RuwcxVT9ORLJrjJO%2FILAm%2BcNsQXTgId%2Bpw1KOLkbFKrq0BQIC6459JtfWqHPXvDC7ZJGboQ%2FXE0F%2BAZQa6jaEyldrkKuDewNy5jy3VX1gquS%2BWrGl%2BGhwmXB4cg1jgOugGUsC%2FxD%2BcragIJAtGA7lp3YdcL%2FiQbnvuzmLP8w%2FyCHPUrpOw94bPOk8fpetOJoLmDfXZdL3hLGBEUGS7dSOoyebLSXGZDctkSpnXCq383lWYWYn0LSv1ooVvuCVzgxE%2BZi4b4QvLjjMG3FJdEX%2BDYmnDvnSrRoDtyj8bD3cP3xbZ3jaNYRbIlQTm2zR1DgoaDGE74FmpZWHcyC8zK0V6AKG6OzkcIaGRnGdDNSpZkN0DrWE7uY6BLiIGY16rflYOaElnbxijoMNDsU3MZH8gGk7crYJ%2FCeHeayInPBDgiREBgn7orAIjOY3xg8vzwKO96a90LmkK7wk977TbKfLIng1iNP9EMKYDjGePdBYDML9zBeqhO5LrVH%2BfbwzG5GXi0w5fnn%2BgU67AFRBwMChVRr%2FLW4j0PqpXUeN5ysVIuagoqSwqOhfwI9rtk56zTuGhO3du4raY5SOQ9vSkRdYHhga%2BW7oQTByD1ISiSaOjHs1s%2FrNfvIfMA8r0drPSykOdCuV2A5NhBpEPpT%2BuOosogdPihcORhO3hbcQJ9y4uxBsaBSJr%2F8S2CGjwZw7SOGmNaNFsPu%2BMRbYDA%2FH2eUMBl96w6KpUuNAXEPUcfq3weRMP1vXW62S4OyniYJ6DEVRkkE4eFZMUqy4c94uwSAegK54Po0V0sPM%2FncTESCgBf7Qe2zZlPhdRGZR%2F25cF6JTH0t2VIRQw%3D%3D&X-Amz-Signature=a837cb6b26bf437fa5008695310a21788918081c36e745d286c5cba9fd4a78e0)
+Download the payload: [Here](https://daffa.tech/lottapixel3.jpg)
 
 4. Frame flood, using GIF with a huge frame
 
@@ -112,7 +113,7 @@ Accept-Encoding: gzip, gzip, deflate, br, br
   
 ![Response DoS](https://portswigger.net/cms/images/6f/83/45a1a9f841b9-article-screen_shot_2018-09-13_at_11.08.12.png)
 
-References:
+## References
 - [Hackerone #840598](https://hackerone.com/reports/840598)
 - [Hackerone #105363](https://hackerone.com/reports/105363)
 - [Hackerone #390](https://hackerone.com/reports/390)

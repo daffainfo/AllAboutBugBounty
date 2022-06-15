@@ -1,8 +1,9 @@
 # Tabnabbing
+
 ## Introduction
 When you open a link in a new tab ( target="_blank" ), the page that opens in a new tab can access the initial tab and change it's location using the window.opener property.
 
-## How to Find
+## How to find
 ```html
 <a href="..." target="_blank" rel="" />  
 
@@ -21,3 +22,6 @@ When you open a link in a new tab ( target="_blank" ), the page that opens in a 
     ```
 2. He tricks the victim into visiting the link, which is opened in the browser in a new tab.
 3. At the same time the JS code is executed and the background tab is redirected to the website evil.com, which is most likely a phishing website.
+
+## References
+* [Hackerone #260278](https://hackerone.com/reports/260278)

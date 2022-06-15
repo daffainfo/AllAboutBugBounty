@@ -7,6 +7,7 @@ These are my bug bounty notes that I have gathered from various sources, you can
 ![](https://img.shields.io/github/last-commit/daffainfo/AllAboutBugBounty)
 
 ## List
+- [Arbitrary File Upload](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Arbitrary%20File%20Upload.md)
 - [Business Logic Errors](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Business%20Logic%20Errors.md)
 - [Cross Site Request Forgery (CSRF)](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Cross%20Site%20Request%20Forgery.md)
 - [Cross Site Scripting (XSS)](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Cross%20Site%20Scripting.md)
@@ -27,14 +28,7 @@ These are my bug bounty notes that I have gathered from various sources, you can
 - [Bypass 304](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%20304.md)
 - [Bypass 429](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%20429.md)
 - [Bypass Captcha](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%20Captcha.md)
-- [Bypass File Upload](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%20File%20Upload.md)
-
-## List CMS
-- [WordPress](https://github.com/daffainfo/AllAboutBugBounty/blob/master/CMS/WordPress.md)
-
-## List Framework
-- [Laravel](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Framework/Laravel.md)
-- [Zend](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Framework/Zend.md)
+- [Bypass CSRF](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%20CSRF.md)
 
 ## Miscellaneous
 - [Account Takeover](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Misc/Account%20Takeover.md)
@@ -52,7 +46,10 @@ These are my bug bounty notes that I have gathered from various sources, you can
 - [Jira](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Jira.md)
 - [Jenkins](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Jenkins.md)
 - [Moodle](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Moodle.md)
+- [Laravel](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Laravel.md)
 - [Nginx](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Nginx.md)
+- [WordPress](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/WordPress.md)
+- [Zend](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Zend.md)
 
 ## Reconnaissance
 - [Scope Based Recon](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Recon/Scope.md)

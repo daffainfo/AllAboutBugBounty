@@ -1,8 +1,9 @@
 # Email Spoofing
+
 ## Introduction
 Email spoofing is a technique used in spam and phishing attacks to trick users into thinking a message came from a person or entity they either know or can trust. In spoofing attacks, the sender forges email headers so that client software displays the fraudulent sender address, which most users take at face value.
 
-## How to Find
+## How to detect
 1. Check the SPF records, if the website don't have a SPF record, the website must be vulnerable to email spoofing
 ```
 v=spf1 include:_spf.google.com ~all

@@ -1,4 +1,5 @@
-# 429 Rate limit Bypass 
+# Bypass 429 (Too Many Requests)
+ 
 1. Try add some custom header
 ```
 X-Forwarded-For : 127.0.0.1
@@ -79,3 +80,7 @@ Host: target.com
 
 {"email":"victim@gmail.com "}
 ```
+
+## References
+* [Huzaifa Tahir](https://huzaifa-tahir.medium.com/methods-to-bypass-rate-limit-5185e6c67ecd)
+* [Gupta Bless](https://gupta-bless.medium.com/rate-limiting-and-its-bypassing-5146743b16be)

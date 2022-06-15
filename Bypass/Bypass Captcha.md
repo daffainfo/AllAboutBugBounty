@@ -1,4 +1,5 @@
 # Bypass Captcha
+
 1. Try changing the request method, for example POST to GET
 ```
 POST / HTTP 1.1

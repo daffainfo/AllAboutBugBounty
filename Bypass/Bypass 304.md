@@ -1,4 +1,4 @@
-# 304 Not Modified Bypass
+# Bypass 304 (Not Modified)
 
 1. Delete "If-None-Match" header
 ```
@@ -26,4 +26,5 @@ Host: target.com
 If-None-Match: W/"32-IuK7rSIJ92ka0c92kld" b
 ```
 
-Source: [https://anggigunawan17.medium.com/tips-bypass-etag-if-none-match-e1f0e650a521](https://anggigunawan17.medium.com/tips-bypass-etag-if-none-match-e1f0e650a521)
+## References
+* [https://anggigunawan17.medium.com/tips-bypass-etag-if-none-match-e1f0e650a521](https://anggigunawan17.medium.com/tips-bypass-etag-if-none-match-e1f0e650a521)

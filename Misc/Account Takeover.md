@@ -1,9 +1,9 @@
 # Account Takeover
 
-## **Introduction**
+## Introduction
 Account Takeover (known as ATO) is a type of identity theft where a bad actor gains unauthorized access to an account belonging to someone else.
 
-## **How to Find**
+## How to exploit
 1. Using OAuth Misconfiguration
    - Victim has a account in evil.com
    - Attacker creates an account on evil.com using OAuth. For example the attacker have a facebook with a registered victim email

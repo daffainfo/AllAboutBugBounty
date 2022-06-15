@@ -1,11 +1,9 @@
 ## NoSQL injection
 
-## Tools
+## Introduction
+NoSQL databases provide looser consistency restrictions than traditional SQL databases. By requiring fewer relational constraints and consistency checks, NoSQL databases often offer performance and scaling benefits. Yet these databases are still potentially vulnerable to injection attacks, even if they aren't using the traditional SQL syntax.
 
-* [NoSQLmap - Automated NoSQL database enumeration and web application exploitation tool](https://github.com/codingo/NoSQLMap)
-
-## Exploit
-
+## How to Exploit
 ### Authentication Bypass
 
 Basic authentication bypass using not equal ($ne) or greater ($gt)
@@ -137,7 +135,9 @@ db.injection.insert({success:1});return 1;db.stores.mapReduce(function() { { emi
 [$ne]=1
 ```
 
-## References
+## Tools
+* [NoSQLmap - Automated NoSQL database enumeration and web application exploitation tool](https://github.com/codingo/NoSQLMap)
 
+## References
 * [Hacktricks](https://book.hacktricks.xyz/pentesting-web/nosql-injection)
 * [PayloadAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/NoSQL%20Injection/README.md)

@@ -549,7 +549,7 @@ http.title:"- Polycom" "Server: lighttpd"
 ### Intel Active Management CVE-2017-5689
 ```
 "Intel(R) Active Management Technology" port:623,664,16992,16993,16994,16995
-”Active Management Technology”
+"Active Management Technology"
 ```
 
 ### HP iLO 4 CVE-2017-12542

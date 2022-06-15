@@ -1,4 +1,4 @@
-# 2FA Bypass
+# Bypass Two-Factor Authentication
 
 1. Response manipulation
 
@@ -90,4 +90,6 @@ Host: vuln.com
 code=null
 ```
 
-Source: [Harsh Bothra](https://twitter.com/harshbothra_) and other writeup
+## References
+* [Harsh Bothra](https://twitter.com/harshbothra_)
+* Other writeup

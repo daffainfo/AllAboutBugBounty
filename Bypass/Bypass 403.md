@@ -1,11 +1,5 @@
-# 403 Forbidden Bypass
+# Bypass 403 (Forbidden)
 
-## Tools
-
-* [Bypass-403 | Go script for bypassing 403 forbidden](https://github.com/daffainfo/bypass-403)
-
-
-## Exploit
 1. Using "X-Original-URL" header
 ```
 GET /admin HTTP/1.1
@@ -67,6 +61,9 @@ Host: victim.com
 X­-Original-­URL: /admin
 ```
 
-Source: 
+## Tools
+* [Bypass-403 | Go script for bypassing 403 forbidden](https://github.com/daffainfo/bypass-403)
+
+## References
 - [@iam_j0ker](https://twitter.com/iam_j0ker)
 - [Hacktricks](https://book.hacktricks.xyz/pentesting/pentesting-web)

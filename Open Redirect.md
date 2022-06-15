@@ -1,5 +1,9 @@
 ## Open Redirect
 
+## Introduction
+Open redirection vulnerabilities arise when an application incorporates user-controllable data into the target of a redirection in an unsafe way. An attacker can construct a URL within the application that causes a redirection to an arbitrary external domain
+
+## How to Find
 1. Try change the domain
 ```
 /?redir=evil.com
@@ -88,3 +92,7 @@ http://ⓔⓥⓘⓛ.ⓒⓞⓜ
 ```
 /?redir=/%0d/evil.com
 ```
+
+## References
+* [Hackerone #1250758](https://hackerone.com/reports/1250758)
+* [@ahmadbrainworks](https://medium.com/@ahmadbrainworks/bug-bounty-how-i-earned-550-in-less-than-5-minutes-open-redirect-chained-with-rxss-8957979070e5)

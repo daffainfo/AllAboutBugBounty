@@ -1,6 +1,6 @@
 # XSS Cheat Sheet (Basic)
 
-## **Introduction**
+## Introduction
 Cross-Site Scripting (XSS) attacks are a type of injection, in which malicious scripts are injected into websites. There is 3 types of XSS Attack:
 - Reflected XSS
 
@@ -12,7 +12,7 @@ Cross-Site Scripting (XSS) attacks are a type of injection, in which malicious s
 
     A type of XSS that has payloads found in the DOM rather than within the HTML code.
 
-## **Payloads**
+## **How to exploit**
 1. Basic payload
 ```html
 <script>alert(1)</script>
@@ -381,5 +381,6 @@ Function("\x61\x6c\x65\x72\x74\x28\x31\x29")();
 <img ignored=() src=x onerror=prompt(1)>
 ```
 
-Reference:
+## References
 - [Brute Logic](https://brutelogic.com.br/)
+- Some random twitter posts

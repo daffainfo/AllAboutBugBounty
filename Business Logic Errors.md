@@ -1,9 +1,9 @@
 # Business Logic Errors
 
-## **Introduction**
+## Introduction
 Business Logic Errors are ways of using the legitimate processing flow of an application in a way that results in a negative consequence to the organization.
 
-## **How to Find**
+## How to find
 1. Review Functionality
    - Some applications have an option where verified reviews are marked with some tick or it's mentioned. Try to see if you can post a review as a Verified Reviewer without purchasing that product.
    - Some app provides you with an option to provide a rating on a scale of 1 to 5, try to go beyond/below the scale-like provide 0 or 6 or -ve.
@@ -54,5 +54,5 @@ Business Logic Errors are ways of using the legitimate processing flow of an app
    - Add multiple fields or unexpected fields by abusing HTTP Parameter Pollution & Mass Assignment
    - Response Manipulation to bypass certain restrictions such as 2FA Bypass 
 
-Reference:
-- [@harshbothra_](https://twitter.com/harshbothra_)
+## References
+* [@harshbothra_](https://twitter.com/harshbothra_)

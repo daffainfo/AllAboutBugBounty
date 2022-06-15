@@ -11,6 +11,7 @@ Only Specific URLs are part of Scope. This usually includes staging/dev/testing 
 - [x] Broken Link Hijacking
 - [x] Data Breach Analysis
 - [x] Misconfigured Cloud Storage
+
 * ### __Medium Scope__
 Usually the scope is wild card scope where all the subdomains are part of scope
 - [x] Subdomain Enumeration
@@ -33,6 +34,7 @@ Usually the scope is wild card scope where all the subdomains are part of scope
 - [x] Potential Pattern Extraction with GF and automating further for XSS, SSRF, etc.
 - [x] Heartbleed Scanning
 - [x] General Security Misconfiguration Scanning
+
 * ### __Large Scope__
 Everything related to the Organization is a part of Scope. This includes child companies, subdomains or any labelled asset owned by organization.
 - [x] Tracking & Tracing every possible signatures of the Target Application (Often there might not be any history on Google related to a scope target, but you can still crawl it.) ​
