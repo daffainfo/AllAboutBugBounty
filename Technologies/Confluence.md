@@ -5,14 +5,13 @@ What would you do if you came across a website that uses Confluence?
 
 ## How to Detect
 ```
-https://example.com/secure/Dashboard.jspa
-https://example.com/login.jsp
+https://example.com/login.action?os_destination=%2F
 ```
 
 1. Find the related CVE by checking Confluence version
 * How to find the Confluence version
 
-Try to request to `https://example.com/secure/Dashboard.jspa` and then check the source code. You will find this line `<meta name="ajs-version-number" content="8.20.9">` so 8.20.9 is the Confluence version. If you found outdated Confluence version, find the CVEs at [CVEDetails](https://www.cvedetails.com/vulnerability-list/vendor_id-3578/product_id-6258/Atlassian-Confluence.html)
+Try to request to `https://example.com/login.action?os_destination=%2F` and then check the source code. You will find this line `<meta name="ajs-version-number" content="8.20.9">` so 8.20.9 is the Confluence version. If you found outdated Confluence version, find the CVEs at [CVEDetails](https://www.cvedetails.com/vulnerability-list/vendor_id-3578/product_id-6258/Atlassian-Confluence.html)
 
 Some example CVE:
 
