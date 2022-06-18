@@ -3,6 +3,9 @@
 ## Introduction
 What would you do if you came across a website that uses WordPress?
 
+## How to Detect
+If you visit `https://target.com` and see the source code, you will see the links to themes and plugins from WordPress. Or you can visit `https://target.com/wp-login.php`, it is the WordPress login admin page
+
 1. Find the related CVE by checking the core, plugins, and theme version
 * How to find the wordpress version
 ```
@@ -98,4 +101,9 @@ Host: target.com
 </value>
 </param></params>
 </methodCall>
+```
+
+7. Register enabled
+```
+http://example.com/wp-login.php?action=register
 ```

