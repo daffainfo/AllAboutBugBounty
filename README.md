@@ -15,7 +15,7 @@ These are my bug bounty notes that I have gathered from various sources, you can
 - [Exposed Source Code](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Exposed%20Source%20Code.md)
 - [Host Header Injection](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Host%20Header%20Injection.md)
 - [Insecure Direct Object References (IDOR)](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Insecure%20Direct%20Object%20References.md)
-- Local File Inclusion (SOON)
+- [Local File Inclusion (LFI)](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Local%20File%20Inclusion.md)
 - [NoSQL Injection](https://github.com/daffainfo/AllAboutBugBounty/blob/master/NoSQL%20Injection.md)
 - SQL Injection (SOON)
 - [OAuth Misconfiguration](https://github.com/daffainfo/AllAboutBugBounty/blob/master/OAuth%20Misconfiguration.md)
@@ -41,6 +41,7 @@ These are my bug bounty notes that I have gathered from various sources, you can
 - [Tabnabbing](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Misc/Tabnabbing.md)
 
 ## Technologies
+- [Grafana](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Confluence.md)
 - [Grafana](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Grafana.md)
 - [HAProxy](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/HAProxy.md)
 - [Jira](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Jira.md)

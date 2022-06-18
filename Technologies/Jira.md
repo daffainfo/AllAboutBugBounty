@@ -12,7 +12,7 @@ https://example.com/login.jsp
 1. Find the related CVE by checking jira version
 * How to find the jira version
 
-Try to request to `https://example.com/secure/Dashboard.jspa` and then check the source code. You will find this line `<meta name="ajs-version-number" content="8.20.9">` so 8.20.9 is the version jira. If you found outdated jira version, find the CVEs at [CVEDetails](https://www.cvedetails.com/vulnerability-list/vendor_id-3578/product_id-8170/Atlassian-Jira.html)
+Try to request to `https://example.com/secure/Dashboard.jspa` and then check the source code. You will find this line `<meta name="ajs-version-number" content="8.20.9">` so 8.20.9 is the jira version. If you found outdated jira version, find the CVEs at [CVEDetails](https://www.cvedetails.com/vulnerability-list/vendor_id-3578/product_id-8170/Atlassian-Jira.html)
 
 Some example CVE:
 
