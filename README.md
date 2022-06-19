@@ -41,7 +41,7 @@ These are my bug bounty notes that I have gathered from various sources, you can
 - [Tabnabbing](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Misc/Tabnabbing.md)
 
 ## Technologies
-- [Grafana](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Confluence.md)
+- [Confluence](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Confluence.md)
 - [Grafana](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Grafana.md)
 - [HAProxy](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/HAProxy.md)
 - [Jira](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Jira.md)
