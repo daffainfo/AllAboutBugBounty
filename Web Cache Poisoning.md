@@ -3,7 +3,10 @@
 ## Introduction
 The objective of web cache poisoning is to send a request that causes a harmful response that gets saved in the cache and served to other users.
 
-## How to FInd
+## Where to find
+`-`
+
+## How to exploit
 1. Basic poisoning
 ```
 GET / HTTP/1.1

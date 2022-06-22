@@ -9,6 +9,7 @@ These are my bug bounty notes that I have gathered from various sources, you can
 ## List
 - [Arbitrary File Upload](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Arbitrary%20File%20Upload.md)
 - [Business Logic Errors](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Business%20Logic%20Errors.md)
+- [CRLF Injection](https://github.com/daffainfo/AllAboutBugBounty/blob/master/CRLF%20Injection.md)
 - [Cross Site Request Forgery (CSRF)](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Cross%20Site%20Request%20Forgery.md)
 - [Cross Site Scripting (XSS)](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Cross%20Site%20Scripting.md)
 - [Denial of Service (DoS)](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Denial%20Of%20Service.md)
@@ -17,9 +18,10 @@ These are my bug bounty notes that I have gathered from various sources, you can
 - [Insecure Direct Object References (IDOR)](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Insecure%20Direct%20Object%20References.md)
 - [Local File Inclusion (LFI)](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Local%20File%20Inclusion.md)
 - [NoSQL Injection](https://github.com/daffainfo/AllAboutBugBounty/blob/master/NoSQL%20Injection.md)
-- SQL Injection (SOON)
 - [OAuth Misconfiguration](https://github.com/daffainfo/AllAboutBugBounty/blob/master/OAuth%20Misconfiguration.md)
 - [Open Redirect](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Open%20Redirect.md)
+- [Remote File Inclusion (RFI)](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Remote%20File%20Inclusion.md)
+- SQL Injection (SOON)
 - [Web Cache Poisoning](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Web%20Cache%20Poisoning.md)
 
 ## List Bypass
@@ -41,6 +43,7 @@ These are my bug bounty notes that I have gathered from various sources, you can
 - [Tabnabbing](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Misc/Tabnabbing.md)
 
 ## Technologies
+- [Apache (HTTP Server)](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Apache%20HTTP%20Server.md)
 - [Confluence](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Confluence.md)
 - [Grafana](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Grafana.md)
 - [HAProxy](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/HAProxy.md)

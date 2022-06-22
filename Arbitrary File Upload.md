@@ -1,5 +1,13 @@
-# Bypass File Upload
-1. Change the ContentType
+# Arbitrary File Upload
+
+## Introduction
+An arbitrary file upload vulnerability is a type of security flaw that allows an attacker to upload malicious files onto a server.
+
+## Where to find
+In upload file feature, for example upload photo profile feature
+
+## How to exploit
+1. Change the `Content-Type` value
 ```
 POST /images/upload/ HTTP/1.1
 Host: target.com

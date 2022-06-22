@@ -3,7 +3,10 @@
 ## Introduction
 Business Logic Errors are ways of using the legitimate processing flow of an application in a way that results in a negative consequence to the organization.
 
-## How to find
+## Where to find
+This vulnerability can appear in all features of the application.
+
+## How to exploit
 1. Review Functionality
    - Some applications have an option where verified reviews are marked with some tick or it's mentioned. Try to see if you can post a review as a Verified Reviewer without purchasing that product.
    - Some app provides you with an option to provide a rating on a scale of 1 to 5, try to go beyond/below the scale-like provide 0 or 6 or -ve.

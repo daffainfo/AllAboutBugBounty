@@ -4,9 +4,7 @@
 What would you do if you came across a website that uses Confluence?
 
 ## How to Detect
-```
-https://example.com/login.action?os_destination=%2F
-```
+Try to HTTP request to `https://example.com/login.action?os_destination=%2F` and there is a form login
 
 1. Find the related CVE by checking Confluence version
 * How to find the Confluence version

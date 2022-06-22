@@ -3,6 +3,9 @@
 ## Introduction
 HTTP Host header attacks exploit vulnerable websites that handle the value of the Host header in an unsafe way. If the server implicitly trusts the Host header, and fails to validate or escape it properly, an attacker may be able to use this input to inject harmful payloads that manipulate server-side behavior. Attacks that involve injecting a payload directly into the Host header are often known as "Host header injection" attacks.
 
+## Where to find
+In the feature where the website can send email to us. For example forgot password / newsletter.
+
 ## How to exploit
 1. Change the host header
 ```

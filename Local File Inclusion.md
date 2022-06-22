@@ -1,7 +1,10 @@
-## Local File Inclusion
+## Local File Inclusion (LFI)
 
 ## Introduction
 Local File Inclusion is an attack technique in which attackers trick a web application into either running or exposing files on a web server
+
+## Where to find
+- Any endpoint that includes a file from a web server. For example, `/index.php?page=index.html`
 
 ## How to exploit
 1. Basic payload

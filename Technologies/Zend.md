@@ -4,7 +4,7 @@
 What would you do if you came across a website that uses Zend?
 
 ## How to Detect
--
+`-`
 
 1. Finding config files
 ```

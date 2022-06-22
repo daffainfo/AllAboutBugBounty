@@ -2,8 +2,11 @@
 
 ## Introduction
 Denial of Service is a type of attack on a service that disrupts its normal function and prevents other users from accessing it
-## How to FInd
 
+## Where to find
+This vulnerability can appear in all features of the application. Depending on how to exploit it, for example in the file upload feature, you can upload very large files
+
+## How to exploit
 1. Cookie bomb
    
 ```

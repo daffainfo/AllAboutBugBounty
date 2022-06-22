@@ -3,7 +3,10 @@
 ## Introduction
 The most infamous OAuth-based vulnerability is when the configuration of the OAuth service itself enables attackers to steal authorization codes or access tokens associated with other users’ accounts. By stealing a valid code or token, the attacker may be able to access the victim's account.
 
-## How to find
+## Where to find
+In the SSO feature. For example `Log in with google` or `Log in with facebook`.
+
+## How to exploit
 1. OAuth token stealing: Changing redirect_uri to attacker.com(Use IDN Homograph or common bypasses).
 2. Change Referral header to attacker.com while requesting OAuth.
 3. Create an account with victim@gmail.com with normal functionality. Create account with victim@gmail.com using OAuth functionality. Now try to login using previous credentials.

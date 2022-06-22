@@ -12,7 +12,10 @@ Cross-Site Scripting (XSS) attacks are a type of injection, in which malicious s
 
     A type of XSS that has payloads found in the DOM rather than within the HTML code.
 
-## **How to exploit**
+## Where to find
+This vulnerability can appear in all features of the application. If you want to find Dom-based XSS, you can find it by reading the javascript source code.
+
+## How to exploit
 1. Basic payload
 ```html
 <script>alert(1)</script>

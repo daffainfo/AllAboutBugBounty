@@ -4,10 +4,7 @@
 What would you do if you came across a website that uses Jira?
 
 ## How to Detect
-```
-https://example.com/secure/Dashboard.jspa
-https://example.com/login.jsp
-```
+Try to HTTP request to `https://example.com/secure/Dashboard.jspa` or `https://example.com/login.jsp` and there is a form login
 
 1. Find the related CVE by checking jira version
 * How to find the jira version

@@ -3,7 +3,10 @@
 ## Introduction
 Source code intended to be kept server-side can sometimes end up being disclosed to users. Such code may contain sensitive information such as database passwords and secret keys, which may help malicious users formulate attacks against the application.
 
-## How to FInd
+## Where to find
+`-`
+
+## How to exploit
 1. Exposed Git folder
 ```
 https://site.com/.git

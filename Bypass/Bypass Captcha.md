@@ -1,4 +1,4 @@
-# Bypass Captcha
+# Bypass Captcha (Google reCAPTCHA)
 
 1. Try changing the request method, for example POST to GET
 ```

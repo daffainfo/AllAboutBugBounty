@@ -4,7 +4,7 @@
 What would you do if you came across a website that uses HAProxy?
 
 ## How to Detect
--
+`-`
 
 1. CVE-2021-40346 (HTTP Request Smuggling)
 ```

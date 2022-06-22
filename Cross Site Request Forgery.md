@@ -3,6 +3,9 @@
 ## Introduction
 Cross-Site Request Forgery (CSRF/XSRF) is an attack that forces an end user to execute unwanted actions on a web application in which they're currently authenticated
 
+## How to find
+Usually found in forms. Try submit the form and check the HTTP request. If the HTTP request does not have a CSRF token then it is likely to be vulnerable to a CSRF attack. But in some cases, the CSRF token can be bypassed, try check this [List](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%20CSRF.md)
+
 ## How to exploit
 1. HTML GET Method
 
@@ -38,3 +41,6 @@ xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
 xhr.send('{"role":admin}');
 </script>
 ```
+
+5. Multipart request
+Soon
