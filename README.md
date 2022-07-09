@@ -65,4 +65,9 @@ These are my bug bounty notes that I have gathered from various sources, you can
 - [Google Dorks](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Reconnaissance/Google%20Dorks.md)
 - [Shodan Dorks](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Reconnaissance/Shodan%20Dorks.md)
 
-## Coming Soon!
+## To-Do-List
+- [ ] Tidy up the reconnaisance folder
+- [ ] Seperate the bypass from some vulnerability readme
+- [ ] Writes multiple payload bypasses for each vulnerability
+  - [ ] Payload XSS for each WAF (Cloudflare, Cloudfront, AWS, etc)
+  - [ ] Payload SQL injection for each WAF (Cloudflare, Cloudfront)
