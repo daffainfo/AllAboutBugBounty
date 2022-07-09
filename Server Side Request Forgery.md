@@ -91,7 +91,7 @@ tftp://evil.com:1337/test
 5. SFTP scheme
 ```
 sftp://evil.com:1337/test
-``
+```
 
 6. LDAP scheme
 ```
