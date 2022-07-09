@@ -9,6 +9,7 @@ Broken Link Hijacking exists whenever a target links to an expired domain or pag
 
 ## Tools
 - [broken-link-checker](https://github.com/stevenvachon/broken-link-checker)
+- [Check My Links](https://chrome.google.com/webstore/detail/check-my-links/ojkcdipcgfaekbeaelaapakgnjflfglf/related)
 
 ## References
 - [Broken Link Hijacking - How expired links can be exploited.](https://edoverflow.com/2017/broken-link-hijacking/)

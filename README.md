@@ -6,7 +6,7 @@ These are my bug bounty notes that I have gathered from various sources, you can
 ![](https://img.shields.io/github/stars/daffainfo/AllAboutBugBounty)
 ![](https://img.shields.io/github/last-commit/daffainfo/AllAboutBugBounty)
 
-## List
+## List Vulnerability
 - [Arbitrary File Upload](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Arbitrary%20File%20Upload.md)
 - [Business Logic Errors](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Business%20Logic%20Errors.md)
 - [CRLF Injection](https://github.com/daffainfo/AllAboutBugBounty/blob/master/CRLF%20Injection.md)
@@ -17,12 +17,17 @@ These are my bug bounty notes that I have gathered from various sources, you can
 - [Host Header Injection](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Host%20Header%20Injection.md)
 - [Insecure Direct Object References (IDOR)](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Insecure%20Direct%20Object%20References.md)
 - [Local File Inclusion (LFI)](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Local%20File%20Inclusion.md)
+- [Mass Assignment](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Mass%20Assignment.md)
 - [NoSQL Injection](https://github.com/daffainfo/AllAboutBugBounty/blob/master/NoSQL%20Injection.md)
 - [OAuth Misconfiguration](https://github.com/daffainfo/AllAboutBugBounty/blob/master/OAuth%20Misconfiguration.md)
 - [Open Redirect](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Open%20Redirect.md)
 - [Remote File Inclusion (RFI)](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Remote%20File%20Inclusion.md)
 - SQL Injection (SOON)
 - [Web Cache Poisoning](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Web%20Cache%20Poisoning.md)
+
+## Checklist
+- [Forgot Password Functionality](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Checklist/Forgot%20Password.md)
+- Register Functionality SOON!
 
 ## List Bypass
 - [Bypass 2FA](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%202FA.md)
@@ -38,8 +43,6 @@ These are my bug bounty notes that I have gathered from various sources, you can
 - [Default Credentials](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Misc/Default%20Credentials.md)
 - [Email Spoofing](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Misc/Email%20Spoofing.md)
 - [JWT Vulnerabilities](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Misc/JWT%20Vulnerabilities.md)
-- [Mass Assignment](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Misc/Mass%20Assignment.md)
-- [Password Reset Flaws](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Misc/Password%20Reset%20Flaws.md)
 - [Tabnabbing](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Misc/Tabnabbing.md)
 
 ## Technologies
@@ -48,6 +51,7 @@ These are my bug bounty notes that I have gathered from various sources, you can
 - [Grafana](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Grafana.md)
 - [HAProxy](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/HAProxy.md)
 - [Jira](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Jira.md)
+- [Joomla](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Joomla.md)
 - [Jenkins](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Jenkins.md)
 - [Moodle](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Moodle.md)
 - [Laravel](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Laravel.md)

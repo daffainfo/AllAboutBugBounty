@@ -236,7 +236,7 @@ ${alert(1)}
 <html>
 <body>
 'onload=alert(1)><svg/1='
-[...]
+...
 'onload=alert(1)><svg/1='
 </body>
 </html>
@@ -255,9 +255,9 @@ ${alert(1)}
 <html>
 <body>
 */alert(1)">'onload="/*<svg/1='
-[...]
+...
 */alert(1)">'onload="/*<svg/1='
-[...]
+...
 */alert(1)">'onload="/*<svg/1='
 </body>
 </html>
