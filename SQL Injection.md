@@ -1,10 +1,9 @@
 # SQL injection 
 
 ## Introduction
+It is an attack in which an attacker inserts untrusted data in the application that results in revealing sensitive information of the database. 
 
-    It is an attack in which an attacker inserts untrusted data in the application that results in revealing sensitive information of the database. 
-
-    SQL Injection (SQLi) is a code injection attack where an attacker manipulates the data being sent to the server to execute malicious SQL statements to control a web application’s database server, thereby accessing, modifying and deleting unauthorized data. This attack is mainly used to take over database servers. 
+SQL Injection (SQLi) is a code injection attack where an attacker manipulates the data being sent to the server to execute malicious SQL statements to control a web application’s database server, thereby accessing, modifying and deleting unauthorized data. This attack is mainly used to take over database servers. 
 
 - In-band SQLi (Classic SQLi) 
 - Error-based SQLi
