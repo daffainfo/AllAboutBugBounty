@@ -22,7 +22,9 @@ These are my bug bounty notes that I have gathered from various sources, you can
 - [OAuth Misconfiguration](https://github.com/daffainfo/AllAboutBugBounty/blob/master/OAuth%20Misconfiguration.md)
 - [Open Redirect](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Open%20Redirect.md)
 - [Remote File Inclusion (RFI)](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Remote%20File%20Inclusion.md)
+- [Server Side Request Forgery](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Server%20Side%20Request%20Forgery.md)
 - SQL Injection (SOON)
+- [Web Cache Deception](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Web%20Cache%20Deception.md)
 - [Web Cache Poisoning](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Web%20Cache%20Poisoning.md)
 
 ## Checklist
@@ -32,10 +34,8 @@ These are my bug bounty notes that I have gathered from various sources, you can
 ## List Bypass
 - [Bypass 2FA](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%202FA.md)
 - [Bypass 403](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%20403.md)
-- [Bypass 304](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%20304.md)
 - [Bypass 429](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%20429.md)
 - [Bypass Captcha](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%20Captcha.md)
-- [Bypass CSRF](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%20CSRF.md)
 
 ## Miscellaneous
 - [Account Takeover](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Misc/Account%20Takeover.md)
@@ -50,11 +50,11 @@ These are my bug bounty notes that I have gathered from various sources, you can
 - [Confluence](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Confluence.md)
 - [Grafana](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Grafana.md)
 - [HAProxy](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/HAProxy.md)
+- [Jenkins](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Jenkins.md)
 - [Jira](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Jira.md)
 - [Joomla](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Joomla.md)
-- [Jenkins](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Jenkins.md)
-- [Moodle](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Moodle.md)
 - [Laravel](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Laravel.md)
+- [Moodle](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Moodle.md)
 - [Nginx](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Nginx.md)
 - [WordPress](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/WordPress.md)
 - [Zend](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Zend.md)
@@ -69,5 +69,5 @@ These are my bug bounty notes that I have gathered from various sources, you can
 - [ ] Tidy up the reconnaisance folder
 - [ ] Seperate the bypass from some vulnerability readme
 - [ ] Writes multiple payload bypasses for each vulnerability
-  - [ ] Payload XSS for each WAF (Cloudflare, Cloudfront, AWS, etc)
+  - [x] Payload XSS for each WAF (Cloudflare, Cloudfront, AWS, etc)
   - [ ] Payload SQL injection for each WAF (Cloudflare, Cloudfront)
