@@ -67,7 +67,7 @@ These are my bug bounty notes that I have gathered from various sources, you can
 
 ## To-Do-List
 - [ ] Tidy up the reconnaisance folder
-- [ ] Seperate the bypass from some vulnerability readme
+- [x] Added CVEs folder
 - [ ] Writes multiple payload bypasses for each vulnerability
   - [x] Payload XSS for each WAF (Cloudflare, Cloudfront, AWS, etc)
   - [ ] Payload SQL injection for each WAF (Cloudflare, Cloudfront)

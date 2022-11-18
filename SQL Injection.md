@@ -13,6 +13,9 @@ SQL Injection (SQLi) is a code injection attack where an attacker manipulates th
 - Time-based Blind SQLi 
 - Out-of-band SQLi 
 
+## Where to find
+Everywhere
+
 ## How to exploit
 # SQLI tricks
 

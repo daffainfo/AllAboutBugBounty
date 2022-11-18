@@ -1,4 +1,4 @@
-# Web Cache Poisoning
+# Web Cache Deception
 
 ## Introduction
 Web Cache Deception is an attack in which an attacker deceives a caching proxy into improperly storing private information sent over the internet and gaining unauthorized access to that cached data
