@@ -18,24 +18,30 @@ These are my bug bounty notes that I have gathered from various sources, you can
 - [Insecure Direct Object References (IDOR)](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Insecure%20Direct%20Object%20References.md)
 - [Local File Inclusion (LFI)](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Local%20File%20Inclusion.md)
 - [Mass Assignment](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Mass%20Assignment.md)
-- [NoSQL Injection](https://github.com/daffainfo/AllAboutBugBounty/blob/master/NoSQL%20Injection.md)
+- [NoSQL Injection (NoSQLi)](https://github.com/daffainfo/AllAboutBugBounty/blob/master/NoSQL%20Injection.md)
 - [OAuth Misconfiguration](https://github.com/daffainfo/AllAboutBugBounty/blob/master/OAuth%20Misconfiguration.md)
 - [Open Redirect](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Open%20Redirect.md)
 - [Remote File Inclusion (RFI)](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Remote%20File%20Inclusion.md)
+- [Server Side Include Injection (SSI Injection)](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Server%20Side%20Include%20Injection.md)
 - [Server Side Request Forgery](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Server%20Side%20Request%20Forgery.md)
-- SQL Injection (SOON)
+- [SQL Injection (SQLi)](https://github.com/daffainfo/AllAboutBugBounty/blob/master/SQL%20Injection.md)
 - [Web Cache Deception](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Web%20Cache%20Deception.md)
 - [Web Cache Poisoning](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Web%20Cache%20Poisoning.md)
-
-## Checklist
-- [Forgot Password Functionality](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Checklist/Forgot%20Password.md)
-- Register Functionality SOON!
 
 ## List Bypass
 - [Bypass 2FA](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%202FA.md)
 - [Bypass 403](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%20403.md)
 - [Bypass 429](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%20429.md)
 - [Bypass Captcha](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%20Captcha.md)
+
+## Checklist
+- [Forgot Password Functionality](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Checklist/Forgot%20Password.md)
+- Register Functionality SOON!
+
+## CVEs
+- CVEs 2021 (https://github.com/daffainfo/AllAboutBugBounty/blob/master/CVEs/2021)
+- CVEs 2022 (SOON)
+- CVEs 2023 (SOON)
 
 ## Miscellaneous
 - [Account Takeover](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Misc/Account%20Takeover.md)
