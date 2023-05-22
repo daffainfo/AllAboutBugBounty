@@ -8,7 +8,6 @@ These are my bug bounty notes that I have gathered from various sources, you can
 
 ## List Vulnerability
 - [Arbitrary File Upload](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Arbitrary%20File%20Upload.md)
-- [Business Logic Errors](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Business%20Logic%20Errors.md)
 - [CRLF Injection](https://github.com/daffainfo/AllAboutBugBounty/blob/master/CRLF%20Injection.md)
 - [Cross Site Request Forgery (CSRF)](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Cross%20Site%20Request%20Forgery.md)
 - [Cross Site Scripting (XSS)](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Cross%20Site%20Scripting.md)
@@ -21,6 +20,7 @@ These are my bug bounty notes that I have gathered from various sources, you can
 - [NoSQL Injection (NoSQLi)](https://github.com/daffainfo/AllAboutBugBounty/blob/master/NoSQL%20Injection.md)
 - [OAuth Misconfiguration](https://github.com/daffainfo/AllAboutBugBounty/blob/master/OAuth%20Misconfiguration.md)
 - [Open Redirect](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Open%20Redirect.md)
+- [Reflected File Download (RFDD)](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Reflected%20File%20Download.md)
 - [Remote File Inclusion (RFI)](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Remote%20File%20Inclusion.md)
 - [Server Side Include Injection (SSI Injection)](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Server%20Side%20Include%20Injection.md)
 - [Server Side Request Forgery](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Server%20Side%20Request%20Forgery.md)
@@ -46,6 +46,7 @@ These are my bug bounty notes that I have gathered from various sources, you can
 ## Miscellaneous
 - [Account Takeover](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Misc/Account%20Takeover.md)
 - [Broken Link Hijacking](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Misc/Broken%20Link%20Hijacking.md)
+- [Business Logic Errors](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Misc/Business%20Logic%20Errors.md)
 - [Default Credentials](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Misc/Default%20Credentials.md)
 - [Email Spoofing](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Misc/Email%20Spoofing.md)
 - [JWT Vulnerabilities](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Misc/JWT%20Vulnerabilities.md)
@@ -73,6 +74,7 @@ These are my bug bounty notes that I have gathered from various sources, you can
 
 ## To-Do-List
 - [ ] Tidy up the reconnaisance folder
+- [ ] Added more lesser known web attacks
 - [x] Added CVEs folder
 - [ ] Writes multiple payload bypasses for each vulnerability
   - [x] Payload XSS for each WAF (Cloudflare, Cloudfront, AWS, etc)
