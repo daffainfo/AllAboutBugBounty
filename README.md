@@ -20,7 +20,7 @@ These are my bug bounty notes that I have gathered from various sources, you can
 - [NoSQL Injection (NoSQLi)](https://github.com/daffainfo/AllAboutBugBounty/blob/master/NoSQL%20Injection.md)
 - [OAuth Misconfiguration](https://github.com/daffainfo/AllAboutBugBounty/blob/master/OAuth%20Misconfiguration.md)
 - [Open Redirect](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Open%20Redirect.md)
-- [Reflected File Download (RFDD)](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Reflected%20File%20Download.md)
+- [Reflected File Download (RFD)](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Reflected%20File%20Download.md)
 - [Remote File Inclusion (RFI)](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Remote%20File%20Inclusion.md)
 - [Server Side Include Injection (SSI Injection)](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Server%20Side%20Include%20Injection.md)
 - [Server Side Request Forgery](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Server%20Side%20Request%20Forgery.md)
