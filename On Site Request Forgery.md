@@ -13,8 +13,7 @@ You can detect On-Site Request Forgery (OSRF) everywhere but there are 2 things 
     <audio src="OUR_INPUT_HERE">
     <iframe src="OUR_INPUT_HERE">
     ```
-- We can control the filename (there are several requirements that must be met)
-  - There is a sensitive endpoint that using the GET method
+- There is a sensitive endpoint that using the GET method
   
     ```
     GET /settings.php?remove_account=1
