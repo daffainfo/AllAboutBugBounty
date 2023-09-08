@@ -5,6 +5,8 @@ A CRLF Injection attack occurs when a user manages to submit a CRLF into an appl
 
 ## Where to find
 It can be found anywhere, always check the request and response. Try to search for parameters that lead to redirects, you can see the response is (301, 302, 303, 307, 308).
+Also observe the response and request.
+Like let's assume we have a website named example.com and we know that /admin exist and when we type it it takes us to the particular endpoint but when we /axyz we know it doesn't exist and it should return 404 not found, but if it returns with something like 400 bad request then we know that the server is trying to process the request and then you can try CRLF.
 
 ## How to exploit
 1. Basic payload
